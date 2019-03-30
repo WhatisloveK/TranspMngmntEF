@@ -16,5 +16,15 @@ namespace WinFrmTrnspMngmnt
         {
             InitializeComponent();
         }
+
+        private void buttonCitiesDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCitiesSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
