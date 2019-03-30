@@ -31,42 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCities = new System.Windows.Forms.TabPage();
-            this.tabPageDepartures = new System.Windows.Forms.TabPage();
-            this.tabPageCargos = new System.Windows.Forms.TabPage();
-            this.tabPageTrucker = new System.Windows.Forms.TabPage();
-            this.tabPageTrucks = new System.Windows.Forms.TabPage();
-            this.tabPageTruckTypes = new System.Windows.Forms.TabPage();
-            this.dGVCities = new System.Windows.Forms.DataGridView();
-            this.dGVDepartures = new System.Windows.Forms.DataGridView();
-            this.dGVCargos = new System.Windows.Forms.DataGridView();
-            this.dGVTruckers = new System.Windows.Forms.DataGridView();
-            this.dGVTrucks = new System.Windows.Forms.DataGridView();
-            this.dGVTruckTypes = new System.Windows.Forms.DataGridView();
-            this.tabPageTrailers = new System.Windows.Forms.TabPage();
-            this.tabPageTrailerTypes = new System.Windows.Forms.TabPage();
-            this.dGVTrailers = new System.Windows.Forms.DataGridView();
-            this.dGVTrailerTypes = new System.Windows.Forms.DataGridView();
-            this.buttonSaveCities = new System.Windows.Forms.Button();
             this.buttonDeleteCities = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.cITyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonSaveCities = new System.Windows.Forms.Button();
+            this.dGVCities = new System.Windows.Forms.DataGridView();
             this.cITYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cITYNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dEPARTURESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dEPARTUREBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cITyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPageDepartures = new System.Windows.Forms.TabPage();
+            this.buttonDeleteDepartures = new System.Windows.Forms.Button();
+            this.buttonSaveDepartures = new System.Windows.Forms.Button();
+            this.dGVDepartures = new System.Windows.Forms.DataGridView();
             this.dPIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dPCITYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dPADRESSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,7 +49,11 @@
             this.cARGOSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cARGOS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cITyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARGOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dEPARTUREBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPageCargos = new System.Windows.Forms.TabPage();
+            this.buttonDeleteCargos = new System.Windows.Forms.Button();
+            this.buttonSaveCargos = new System.Windows.Forms.Button();
+            this.dGVCargos = new System.Windows.Forms.DataGridView();
             this.cGIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cGNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cGWEIGHTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,7 +67,11 @@
             this.dEPARTUREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dEPARTURE1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tRUCKERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cARGOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPageTrucker = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTruckers = new System.Windows.Forms.Button();
+            this.buttonSaveTruckers = new System.Windows.Forms.Button();
+            this.dGVTruckers = new System.Windows.Forms.DataGridView();
             this.tRIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRSURNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,7 +80,11 @@
             this.tRTRUCKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cARGOSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tRUCKBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tRUCKERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPageTrucks = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTrucks = new System.Windows.Forms.Button();
+            this.buttonSaveTrucks = new System.Windows.Forms.Button();
+            this.dGVTrucks = new System.Windows.Forms.DataGridView();
             this.tRUCKIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKTYPEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,49 +93,62 @@
             this.tRAILERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKTYPESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKERSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tRUCKTYPESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tRUCKBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPageTruckTypes = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTruckTypes = new System.Windows.Forms.Button();
+            this.buttonSaveTruckTypes = new System.Windows.Forms.Button();
+            this.dGVTruckTypes = new System.Windows.Forms.DataGridView();
             this.tYPEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPEMODELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPECAPACITYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPECLASSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tRAILERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tRUCKTYPESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPageTrailers = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTrailers = new System.Windows.Forms.Button();
+            this.buttonSaveTrailers = new System.Windows.Forms.Button();
+            this.dGVTrailers = new System.Windows.Forms.DataGridView();
             this.tRAILERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERTYPEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERTYPESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tRAILERTYPESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tRAILERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPageTrailerTypes = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTrailerType = new System.Windows.Forms.Button();
+            this.buttonSaveTrailerType = new System.Windows.Forms.Button();
+            this.dGVTrailerTypes = new System.Windows.Forms.DataGridView();
             this.tYPETRIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPETRMODELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPETRCAPACITYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPETRTYPEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tRAILERTYPESBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPageCities.SuspendLayout();
-            this.tabPageDepartures.SuspendLayout();
-            this.tabPageCargos.SuspendLayout();
-            this.tabPageTrucker.SuspendLayout();
-            this.tabPageTrucks.SuspendLayout();
-            this.tabPageTruckTypes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVCities)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVDepartures)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVCargos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTrucks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckTypes)).BeginInit();
-            this.tabPageTrailers.SuspendLayout();
-            this.tabPageTrailerTypes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailerTypes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cITyBindingSource)).BeginInit();
+            this.tabPageDepartures.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVDepartures)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dEPARTUREBindingSource)).BeginInit();
+            this.tabPageCargos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVCargos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cARGOBindingSource)).BeginInit();
+            this.tabPageTrucker.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRUCKERBindingSource)).BeginInit();
+            this.tabPageTrucks.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTrucks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRUCKBindingSource)).BeginInit();
+            this.tabPageTruckTypes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckTypes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRUCKTYPESBindingSource)).BeginInit();
+            this.tabPageTrailers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRAILERBindingSource)).BeginInit();
+            this.tabPageTrailerTypes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailerTypes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRAILERTYPESBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,70 +181,25 @@
             this.tabPageCities.Text = "Cities";
             this.tabPageCities.UseVisualStyleBackColor = true;
             // 
-            // tabPageDepartures
+            // buttonDeleteCities
             // 
-            this.tabPageDepartures.Controls.Add(this.button1);
-            this.tabPageDepartures.Controls.Add(this.button2);
-            this.tabPageDepartures.Controls.Add(this.dGVDepartures);
-            this.tabPageDepartures.Location = new System.Drawing.Point(4, 22);
-            this.tabPageDepartures.Name = "tabPageDepartures";
-            this.tabPageDepartures.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDepartures.Size = new System.Drawing.Size(794, 425);
-            this.tabPageDepartures.TabIndex = 1;
-            this.tabPageDepartures.Text = "Departures";
-            this.tabPageDepartures.UseVisualStyleBackColor = true;
+            this.buttonDeleteCities.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteCities.Name = "buttonDeleteCities";
+            this.buttonDeleteCities.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteCities.TabIndex = 2;
+            this.buttonDeleteCities.Text = "Delete";
+            this.buttonDeleteCities.UseVisualStyleBackColor = true;
+            this.buttonDeleteCities.Click += new System.EventHandler(this.buttonDeleteCities_Click);
             // 
-            // tabPageCargos
+            // buttonSaveCities
             // 
-            this.tabPageCargos.Controls.Add(this.button3);
-            this.tabPageCargos.Controls.Add(this.button4);
-            this.tabPageCargos.Controls.Add(this.dGVCargos);
-            this.tabPageCargos.Location = new System.Drawing.Point(4, 22);
-            this.tabPageCargos.Name = "tabPageCargos";
-            this.tabPageCargos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCargos.Size = new System.Drawing.Size(794, 425);
-            this.tabPageCargos.TabIndex = 2;
-            this.tabPageCargos.Text = "Cargos";
-            this.tabPageCargos.UseVisualStyleBackColor = true;
-            // 
-            // tabPageTrucker
-            // 
-            this.tabPageTrucker.Controls.Add(this.button5);
-            this.tabPageTrucker.Controls.Add(this.button6);
-            this.tabPageTrucker.Controls.Add(this.dGVTruckers);
-            this.tabPageTrucker.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTrucker.Name = "tabPageTrucker";
-            this.tabPageTrucker.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrucker.Size = new System.Drawing.Size(794, 425);
-            this.tabPageTrucker.TabIndex = 3;
-            this.tabPageTrucker.Text = "Truckers";
-            this.tabPageTrucker.UseVisualStyleBackColor = true;
-            // 
-            // tabPageTrucks
-            // 
-            this.tabPageTrucks.Controls.Add(this.button7);
-            this.tabPageTrucks.Controls.Add(this.button8);
-            this.tabPageTrucks.Controls.Add(this.dGVTrucks);
-            this.tabPageTrucks.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTrucks.Name = "tabPageTrucks";
-            this.tabPageTrucks.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrucks.Size = new System.Drawing.Size(794, 425);
-            this.tabPageTrucks.TabIndex = 4;
-            this.tabPageTrucks.Text = "Trucks";
-            this.tabPageTrucks.UseVisualStyleBackColor = true;
-            // 
-            // tabPageTruckTypes
-            // 
-            this.tabPageTruckTypes.Controls.Add(this.button9);
-            this.tabPageTruckTypes.Controls.Add(this.button10);
-            this.tabPageTruckTypes.Controls.Add(this.dGVTruckTypes);
-            this.tabPageTruckTypes.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTruckTypes.Name = "tabPageTruckTypes";
-            this.tabPageTruckTypes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTruckTypes.Size = new System.Drawing.Size(794, 425);
-            this.tabPageTruckTypes.TabIndex = 5;
-            this.tabPageTruckTypes.Text = "Truck types";
-            this.tabPageTruckTypes.UseVisualStyleBackColor = true;
+            this.buttonSaveCities.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveCities.Name = "buttonSaveCities";
+            this.buttonSaveCities.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveCities.TabIndex = 1;
+            this.buttonSaveCities.Text = "Save";
+            this.buttonSaveCities.UseVisualStyleBackColor = true;
+            this.buttonSaveCities.Click += new System.EventHandler(this.buttonSaveCities_Click);
             // 
             // dGVCities
             // 
@@ -260,316 +215,6 @@
             this.dGVCities.Name = "dGVCities";
             this.dGVCities.Size = new System.Drawing.Size(802, 390);
             this.dGVCities.TabIndex = 0;
-            // 
-            // dGVDepartures
-            // 
-            this.dGVDepartures.AllowUserToOrderColumns = true;
-            this.dGVDepartures.AutoGenerateColumns = false;
-            this.dGVDepartures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVDepartures.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dPIDDataGridViewTextBoxColumn,
-            this.dPCITYDataGridViewTextBoxColumn,
-            this.dPADRESSDataGridViewTextBoxColumn,
-            this.dPNAMEDataGridViewTextBoxColumn,
-            this.cARGOSDataGridViewTextBoxColumn,
-            this.cARGOS1DataGridViewTextBoxColumn,
-            this.cITyDataGridViewTextBoxColumn});
-            this.dGVDepartures.DataSource = this.dEPARTUREBindingSource;
-            this.dGVDepartures.Location = new System.Drawing.Point(-4, 35);
-            this.dGVDepartures.Name = "dGVDepartures";
-            this.dGVDepartures.Size = new System.Drawing.Size(802, 390);
-            this.dGVDepartures.TabIndex = 1;
-            // 
-            // dGVCargos
-            // 
-            this.dGVCargos.AllowUserToOrderColumns = true;
-            this.dGVCargos.AutoGenerateColumns = false;
-            this.dGVCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVCargos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cGIDDataGridViewTextBoxColumn,
-            this.cGNUMBERDataGridViewTextBoxColumn,
-            this.cGWEIGHTDataGridViewTextBoxColumn,
-            this.cGDEPARTUREDATEDataGridViewTextBoxColumn,
-            this.cGARRIVALDATEDataGridViewTextBoxColumn,
-            this.cGDESTINATIONDataGridViewTextBoxColumn,
-            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn,
-            this.cGTRUCKERDataGridViewTextBoxColumn,
-            this.cGDEPARTURETIMEDataGridViewTextBoxColumn,
-            this.cGARRIVALTIMEDataGridViewTextBoxColumn,
-            this.dEPARTUREDataGridViewTextBoxColumn,
-            this.dEPARTURE1DataGridViewTextBoxColumn,
-            this.tRUCKERDataGridViewTextBoxColumn});
-            this.dGVCargos.DataSource = this.cARGOBindingSource;
-            this.dGVCargos.Location = new System.Drawing.Point(-4, 35);
-            this.dGVCargos.Name = "dGVCargos";
-            this.dGVCargos.Size = new System.Drawing.Size(802, 390);
-            this.dGVCargos.TabIndex = 1;
-            // 
-            // dGVTruckers
-            // 
-            this.dGVTruckers.AllowUserToOrderColumns = true;
-            this.dGVTruckers.AutoGenerateColumns = false;
-            this.dGVTruckers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVTruckers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tRIDDataGridViewTextBoxColumn,
-            this.tRNAMEDataGridViewTextBoxColumn,
-            this.tRSURNAMEDataGridViewTextBoxColumn,
-            this.tRBIRTHDataGridViewTextBoxColumn,
-            this.tRSTARTDRIVEDataGridViewTextBoxColumn,
-            this.tRTRUCKDataGridViewTextBoxColumn,
-            this.cARGOSDataGridViewTextBoxColumn1,
-            this.tRUCKDataGridViewTextBoxColumn});
-            this.dGVTruckers.DataSource = this.tRUCKERBindingSource;
-            this.dGVTruckers.Location = new System.Drawing.Point(-4, 35);
-            this.dGVTruckers.Name = "dGVTruckers";
-            this.dGVTruckers.Size = new System.Drawing.Size(802, 390);
-            this.dGVTruckers.TabIndex = 1;
-            // 
-            // dGVTrucks
-            // 
-            this.dGVTrucks.AllowUserToOrderColumns = true;
-            this.dGVTrucks.AutoGenerateColumns = false;
-            this.dGVTrucks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVTrucks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tRUCKIDDataGridViewTextBoxColumn,
-            this.tRUCKNUMBERDataGridViewTextBoxColumn,
-            this.tRUCKTYPEDataGridViewTextBoxColumn,
-            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn,
-            this.tRUCKTRAILERDataGridViewTextBoxColumn,
-            this.tRAILERDataGridViewTextBoxColumn,
-            this.tRUCKTYPESDataGridViewTextBoxColumn,
-            this.tRUCKERSDataGridViewTextBoxColumn});
-            this.dGVTrucks.DataSource = this.tRUCKBindingSource;
-            this.dGVTrucks.Location = new System.Drawing.Point(-4, 35);
-            this.dGVTrucks.Name = "dGVTrucks";
-            this.dGVTrucks.Size = new System.Drawing.Size(802, 390);
-            this.dGVTrucks.TabIndex = 1;
-            // 
-            // dGVTruckTypes
-            // 
-            this.dGVTruckTypes.AllowUserToOrderColumns = true;
-            this.dGVTruckTypes.AutoGenerateColumns = false;
-            this.dGVTruckTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVTruckTypes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tYPEIDDataGridViewTextBoxColumn,
-            this.tYPEMODELDataGridViewTextBoxColumn,
-            this.tYPECAPACITYDataGridViewTextBoxColumn,
-            this.tYPECLASSDataGridViewTextBoxColumn,
-            this.tRUCKsDataGridViewTextBoxColumn});
-            this.dGVTruckTypes.DataSource = this.tRUCKTYPESBindingSource;
-            this.dGVTruckTypes.Location = new System.Drawing.Point(-4, 35);
-            this.dGVTruckTypes.Name = "dGVTruckTypes";
-            this.dGVTruckTypes.Size = new System.Drawing.Size(802, 390);
-            this.dGVTruckTypes.TabIndex = 1;
-            // 
-            // tabPageTrailers
-            // 
-            this.tabPageTrailers.Controls.Add(this.button11);
-            this.tabPageTrailers.Controls.Add(this.button12);
-            this.tabPageTrailers.Controls.Add(this.dGVTrailers);
-            this.tabPageTrailers.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTrailers.Name = "tabPageTrailers";
-            this.tabPageTrailers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrailers.Size = new System.Drawing.Size(794, 425);
-            this.tabPageTrailers.TabIndex = 6;
-            this.tabPageTrailers.Text = "Trailers";
-            this.tabPageTrailers.UseVisualStyleBackColor = true;
-            // 
-            // tabPageTrailerTypes
-            // 
-            this.tabPageTrailerTypes.Controls.Add(this.button13);
-            this.tabPageTrailerTypes.Controls.Add(this.button14);
-            this.tabPageTrailerTypes.Controls.Add(this.dGVTrailerTypes);
-            this.tabPageTrailerTypes.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTrailerTypes.Name = "tabPageTrailerTypes";
-            this.tabPageTrailerTypes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrailerTypes.Size = new System.Drawing.Size(794, 425);
-            this.tabPageTrailerTypes.TabIndex = 7;
-            this.tabPageTrailerTypes.Text = "Trailer types";
-            this.tabPageTrailerTypes.UseVisualStyleBackColor = true;
-            // 
-            // dGVTrailers
-            // 
-            this.dGVTrailers.AllowUserToOrderColumns = true;
-            this.dGVTrailers.AutoGenerateColumns = false;
-            this.dGVTrailers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVTrailers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tRAILERIDDataGridViewTextBoxColumn,
-            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn,
-            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn,
-            this.tRAILERTYPEDataGridViewTextBoxColumn,
-            this.tRAILERTYPESDataGridViewTextBoxColumn,
-            this.tRUCKsDataGridViewTextBoxColumn1});
-            this.dGVTrailers.DataSource = this.tRAILERBindingSource;
-            this.dGVTrailers.Location = new System.Drawing.Point(-4, 35);
-            this.dGVTrailers.Name = "dGVTrailers";
-            this.dGVTrailers.Size = new System.Drawing.Size(802, 390);
-            this.dGVTrailers.TabIndex = 1;
-            // 
-            // dGVTrailerTypes
-            // 
-            this.dGVTrailerTypes.AllowUserToOrderColumns = true;
-            this.dGVTrailerTypes.AutoGenerateColumns = false;
-            this.dGVTrailerTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVTrailerTypes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tYPETRIDDataGridViewTextBoxColumn,
-            this.tYPETRMODELDataGridViewTextBoxColumn,
-            this.tYPETRCAPACITYDataGridViewTextBoxColumn,
-            this.tYPETRTYPEDataGridViewTextBoxColumn,
-            this.tRAILERsDataGridViewTextBoxColumn});
-            this.dGVTrailerTypes.DataSource = this.tRAILERTYPESBindingSource;
-            this.dGVTrailerTypes.Location = new System.Drawing.Point(-4, 35);
-            this.dGVTrailerTypes.Name = "dGVTrailerTypes";
-            this.dGVTrailerTypes.Size = new System.Drawing.Size(802, 390);
-            this.dGVTrailerTypes.TabIndex = 1;
-            // 
-            // buttonSaveCities
-            // 
-            this.buttonSaveCities.Location = new System.Drawing.Point(9, 6);
-            this.buttonSaveCities.Name = "buttonSaveCities";
-            this.buttonSaveCities.Size = new System.Drawing.Size(75, 23);
-            this.buttonSaveCities.TabIndex = 1;
-            this.buttonSaveCities.Text = "Save";
-            this.buttonSaveCities.UseVisualStyleBackColor = true;
-            // 
-            // buttonDeleteCities
-            // 
-            this.buttonDeleteCities.Location = new System.Drawing.Point(115, 6);
-            this.buttonDeleteCities.Name = "buttonDeleteCities";
-            this.buttonDeleteCities.Size = new System.Drawing.Size(75, 23);
-            this.buttonDeleteCities.TabIndex = 2;
-            this.buttonDeleteCities.Text = "Delete";
-            this.buttonDeleteCities.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(115, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(9, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(115, 6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(9, 6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(115, 6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Delete";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(9, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Save";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(115, 6);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Delete";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(9, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Save";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(115, 6);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Delete";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(9, 6);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "Save";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(115, 6);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "Delete";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(9, 6);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "Save";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(115, 6);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "Delete";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(9, 6);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 3;
-            this.button14.Text = "Save";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // cITyBindingSource
-            // 
-            this.cITyBindingSource.DataSource = typeof(TrnspMngmntDataEF.CITy);
             // 
             // cITYIDDataGridViewTextBoxColumn
             // 
@@ -589,9 +234,61 @@
             this.dEPARTURESDataGridViewTextBoxColumn.HeaderText = "DEPARTURES";
             this.dEPARTURESDataGridViewTextBoxColumn.Name = "dEPARTURESDataGridViewTextBoxColumn";
             // 
-            // dEPARTUREBindingSource
+            // cITyBindingSource
             // 
-            this.dEPARTUREBindingSource.DataSource = typeof(TrnspMngmntDataEF.DEPARTURE);
+            this.cITyBindingSource.DataSource = typeof(TrnspMngmntDataEF.CITy);
+            // 
+            // tabPageDepartures
+            // 
+            this.tabPageDepartures.Controls.Add(this.buttonDeleteDepartures);
+            this.tabPageDepartures.Controls.Add(this.buttonSaveDepartures);
+            this.tabPageDepartures.Controls.Add(this.dGVDepartures);
+            this.tabPageDepartures.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDepartures.Name = "tabPageDepartures";
+            this.tabPageDepartures.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDepartures.Size = new System.Drawing.Size(794, 425);
+            this.tabPageDepartures.TabIndex = 1;
+            this.tabPageDepartures.Text = "Departures";
+            this.tabPageDepartures.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteDepartures
+            // 
+            this.buttonDeleteDepartures.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteDepartures.Name = "buttonDeleteDepartures";
+            this.buttonDeleteDepartures.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteDepartures.TabIndex = 4;
+            this.buttonDeleteDepartures.Text = "Delete";
+            this.buttonDeleteDepartures.UseVisualStyleBackColor = true;
+            this.buttonDeleteDepartures.Click += new System.EventHandler(this.buttonDeleteDepartures_Click);
+            // 
+            // buttonSaveDepartures
+            // 
+            this.buttonSaveDepartures.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveDepartures.Name = "buttonSaveDepartures";
+            this.buttonSaveDepartures.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveDepartures.TabIndex = 3;
+            this.buttonSaveDepartures.Text = "Save";
+            this.buttonSaveDepartures.UseVisualStyleBackColor = true;
+            this.buttonSaveDepartures.Click += new System.EventHandler(this.buttonSaveDepartures_Click);
+            // 
+            // dGVDepartures
+            // 
+            this.dGVDepartures.AllowUserToOrderColumns = true;
+            this.dGVDepartures.AutoGenerateColumns = false;
+            this.dGVDepartures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVDepartures.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dPIDDataGridViewTextBoxColumn,
+            this.dPCITYDataGridViewTextBoxColumn,
+            this.dPADRESSDataGridViewTextBoxColumn,
+            this.dPNAMEDataGridViewTextBoxColumn,
+            this.cARGOSDataGridViewTextBoxColumn,
+            this.cARGOS1DataGridViewTextBoxColumn,
+            this.cITyDataGridViewTextBoxColumn});
+            this.dGVDepartures.DataSource = this.dEPARTUREBindingSource;
+            this.dGVDepartures.Location = new System.Drawing.Point(-4, 35);
+            this.dGVDepartures.Name = "dGVDepartures";
+            this.dGVDepartures.Size = new System.Drawing.Size(802, 390);
+            this.dGVDepartures.TabIndex = 1;
             // 
             // dPIDDataGridViewTextBoxColumn
             // 
@@ -635,9 +332,67 @@
             this.cITyDataGridViewTextBoxColumn.HeaderText = "CITy";
             this.cITyDataGridViewTextBoxColumn.Name = "cITyDataGridViewTextBoxColumn";
             // 
-            // cARGOBindingSource
+            // dEPARTUREBindingSource
             // 
-            this.cARGOBindingSource.DataSource = typeof(TrnspMngmntDataEF.CARGO);
+            this.dEPARTUREBindingSource.DataSource = typeof(TrnspMngmntDataEF.DEPARTURE);
+            // 
+            // tabPageCargos
+            // 
+            this.tabPageCargos.Controls.Add(this.buttonDeleteCargos);
+            this.tabPageCargos.Controls.Add(this.buttonSaveCargos);
+            this.tabPageCargos.Controls.Add(this.dGVCargos);
+            this.tabPageCargos.Location = new System.Drawing.Point(4, 22);
+            this.tabPageCargos.Name = "tabPageCargos";
+            this.tabPageCargos.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCargos.Size = new System.Drawing.Size(794, 425);
+            this.tabPageCargos.TabIndex = 2;
+            this.tabPageCargos.Text = "Cargos";
+            this.tabPageCargos.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteCargos
+            // 
+            this.buttonDeleteCargos.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteCargos.Name = "buttonDeleteCargos";
+            this.buttonDeleteCargos.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteCargos.TabIndex = 4;
+            this.buttonDeleteCargos.Text = "Delete";
+            this.buttonDeleteCargos.UseVisualStyleBackColor = true;
+            this.buttonDeleteCargos.Click += new System.EventHandler(this.buttonDeleteCargos_Click);
+            // 
+            // buttonSaveCargos
+            // 
+            this.buttonSaveCargos.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveCargos.Name = "buttonSaveCargos";
+            this.buttonSaveCargos.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveCargos.TabIndex = 3;
+            this.buttonSaveCargos.Text = "Save";
+            this.buttonSaveCargos.UseVisualStyleBackColor = true;
+            this.buttonSaveCargos.Click += new System.EventHandler(this.buttonSaveCargos_Click);
+            // 
+            // dGVCargos
+            // 
+            this.dGVCargos.AllowUserToOrderColumns = true;
+            this.dGVCargos.AutoGenerateColumns = false;
+            this.dGVCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVCargos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cGIDDataGridViewTextBoxColumn,
+            this.cGNUMBERDataGridViewTextBoxColumn,
+            this.cGWEIGHTDataGridViewTextBoxColumn,
+            this.cGDEPARTUREDATEDataGridViewTextBoxColumn,
+            this.cGARRIVALDATEDataGridViewTextBoxColumn,
+            this.cGDESTINATIONDataGridViewTextBoxColumn,
+            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn,
+            this.cGTRUCKERDataGridViewTextBoxColumn,
+            this.cGDEPARTURETIMEDataGridViewTextBoxColumn,
+            this.cGARRIVALTIMEDataGridViewTextBoxColumn,
+            this.dEPARTUREDataGridViewTextBoxColumn,
+            this.dEPARTURE1DataGridViewTextBoxColumn,
+            this.tRUCKERDataGridViewTextBoxColumn});
+            this.dGVCargos.DataSource = this.cARGOBindingSource;
+            this.dGVCargos.Location = new System.Drawing.Point(-4, 35);
+            this.dGVCargos.Name = "dGVCargos";
+            this.dGVCargos.Size = new System.Drawing.Size(802, 390);
+            this.dGVCargos.TabIndex = 1;
             // 
             // cGIDDataGridViewTextBoxColumn
             // 
@@ -717,9 +472,62 @@
             this.tRUCKERDataGridViewTextBoxColumn.HeaderText = "TRUCKER";
             this.tRUCKERDataGridViewTextBoxColumn.Name = "tRUCKERDataGridViewTextBoxColumn";
             // 
-            // tRUCKERBindingSource
+            // cARGOBindingSource
             // 
-            this.tRUCKERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCKER);
+            this.cARGOBindingSource.DataSource = typeof(TrnspMngmntDataEF.CARGO);
+            // 
+            // tabPageTrucker
+            // 
+            this.tabPageTrucker.Controls.Add(this.buttonDeleteTruckers);
+            this.tabPageTrucker.Controls.Add(this.buttonSaveTruckers);
+            this.tabPageTrucker.Controls.Add(this.dGVTruckers);
+            this.tabPageTrucker.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTrucker.Name = "tabPageTrucker";
+            this.tabPageTrucker.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTrucker.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrucker.TabIndex = 3;
+            this.tabPageTrucker.Text = "Truckers";
+            this.tabPageTrucker.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteTruckers
+            // 
+            this.buttonDeleteTruckers.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteTruckers.Name = "buttonDeleteTruckers";
+            this.buttonDeleteTruckers.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteTruckers.TabIndex = 4;
+            this.buttonDeleteTruckers.Text = "Delete";
+            this.buttonDeleteTruckers.UseVisualStyleBackColor = true;
+            this.buttonDeleteTruckers.Click += new System.EventHandler(this.buttonDeleteTruckers_Click);
+            // 
+            // buttonSaveTruckers
+            // 
+            this.buttonSaveTruckers.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveTruckers.Name = "buttonSaveTruckers";
+            this.buttonSaveTruckers.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveTruckers.TabIndex = 3;
+            this.buttonSaveTruckers.Text = "Save";
+            this.buttonSaveTruckers.UseVisualStyleBackColor = true;
+            this.buttonSaveTruckers.Click += new System.EventHandler(this.buttonSaveTruckers_Click);
+            // 
+            // dGVTruckers
+            // 
+            this.dGVTruckers.AllowUserToOrderColumns = true;
+            this.dGVTruckers.AutoGenerateColumns = false;
+            this.dGVTruckers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVTruckers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tRIDDataGridViewTextBoxColumn,
+            this.tRNAMEDataGridViewTextBoxColumn,
+            this.tRSURNAMEDataGridViewTextBoxColumn,
+            this.tRBIRTHDataGridViewTextBoxColumn,
+            this.tRSTARTDRIVEDataGridViewTextBoxColumn,
+            this.tRTRUCKDataGridViewTextBoxColumn,
+            this.cARGOSDataGridViewTextBoxColumn1,
+            this.tRUCKDataGridViewTextBoxColumn});
+            this.dGVTruckers.DataSource = this.tRUCKERBindingSource;
+            this.dGVTruckers.Location = new System.Drawing.Point(-4, 35);
+            this.dGVTruckers.Name = "dGVTruckers";
+            this.dGVTruckers.Size = new System.Drawing.Size(802, 390);
+            this.dGVTruckers.TabIndex = 1;
             // 
             // tRIDDataGridViewTextBoxColumn
             // 
@@ -769,9 +577,62 @@
             this.tRUCKDataGridViewTextBoxColumn.HeaderText = "TRUCK";
             this.tRUCKDataGridViewTextBoxColumn.Name = "tRUCKDataGridViewTextBoxColumn";
             // 
-            // tRUCKBindingSource
+            // tRUCKERBindingSource
             // 
-            this.tRUCKBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK);
+            this.tRUCKERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCKER);
+            // 
+            // tabPageTrucks
+            // 
+            this.tabPageTrucks.Controls.Add(this.buttonDeleteTrucks);
+            this.tabPageTrucks.Controls.Add(this.buttonSaveTrucks);
+            this.tabPageTrucks.Controls.Add(this.dGVTrucks);
+            this.tabPageTrucks.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTrucks.Name = "tabPageTrucks";
+            this.tabPageTrucks.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTrucks.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrucks.TabIndex = 4;
+            this.tabPageTrucks.Text = "Trucks";
+            this.tabPageTrucks.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteTrucks
+            // 
+            this.buttonDeleteTrucks.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteTrucks.Name = "buttonDeleteTrucks";
+            this.buttonDeleteTrucks.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteTrucks.TabIndex = 4;
+            this.buttonDeleteTrucks.Text = "Delete";
+            this.buttonDeleteTrucks.UseVisualStyleBackColor = true;
+            this.buttonDeleteTrucks.Click += new System.EventHandler(this.buttonDeleteTrucks_Click);
+            // 
+            // buttonSaveTrucks
+            // 
+            this.buttonSaveTrucks.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveTrucks.Name = "buttonSaveTrucks";
+            this.buttonSaveTrucks.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveTrucks.TabIndex = 3;
+            this.buttonSaveTrucks.Text = "Save";
+            this.buttonSaveTrucks.UseVisualStyleBackColor = true;
+            this.buttonSaveTrucks.Click += new System.EventHandler(this.buttonSaveTrucks_Click);
+            // 
+            // dGVTrucks
+            // 
+            this.dGVTrucks.AllowUserToOrderColumns = true;
+            this.dGVTrucks.AutoGenerateColumns = false;
+            this.dGVTrucks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVTrucks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tRUCKIDDataGridViewTextBoxColumn,
+            this.tRUCKNUMBERDataGridViewTextBoxColumn,
+            this.tRUCKTYPEDataGridViewTextBoxColumn,
+            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn,
+            this.tRUCKTRAILERDataGridViewTextBoxColumn,
+            this.tRAILERDataGridViewTextBoxColumn,
+            this.tRUCKTYPESDataGridViewTextBoxColumn,
+            this.tRUCKERSDataGridViewTextBoxColumn});
+            this.dGVTrucks.DataSource = this.tRUCKBindingSource;
+            this.dGVTrucks.Location = new System.Drawing.Point(-4, 35);
+            this.dGVTrucks.Name = "dGVTrucks";
+            this.dGVTrucks.Size = new System.Drawing.Size(802, 390);
+            this.dGVTrucks.TabIndex = 1;
             // 
             // tRUCKIDDataGridViewTextBoxColumn
             // 
@@ -821,9 +682,59 @@
             this.tRUCKERSDataGridViewTextBoxColumn.HeaderText = "TRUCKERS";
             this.tRUCKERSDataGridViewTextBoxColumn.Name = "tRUCKERSDataGridViewTextBoxColumn";
             // 
-            // tRUCKTYPESBindingSource
+            // tRUCKBindingSource
             // 
-            this.tRUCKTYPESBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK_TYPES);
+            this.tRUCKBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK);
+            // 
+            // tabPageTruckTypes
+            // 
+            this.tabPageTruckTypes.Controls.Add(this.buttonDeleteTruckTypes);
+            this.tabPageTruckTypes.Controls.Add(this.buttonSaveTruckTypes);
+            this.tabPageTruckTypes.Controls.Add(this.dGVTruckTypes);
+            this.tabPageTruckTypes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTruckTypes.Name = "tabPageTruckTypes";
+            this.tabPageTruckTypes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTruckTypes.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTruckTypes.TabIndex = 5;
+            this.tabPageTruckTypes.Text = "Truck types";
+            this.tabPageTruckTypes.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteTruckTypes
+            // 
+            this.buttonDeleteTruckTypes.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteTruckTypes.Name = "buttonDeleteTruckTypes";
+            this.buttonDeleteTruckTypes.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteTruckTypes.TabIndex = 4;
+            this.buttonDeleteTruckTypes.Text = "Delete";
+            this.buttonDeleteTruckTypes.UseVisualStyleBackColor = true;
+            this.buttonDeleteTruckTypes.Click += new System.EventHandler(this.buttonDeleteTruckTypes_Click);
+            // 
+            // buttonSaveTruckTypes
+            // 
+            this.buttonSaveTruckTypes.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveTruckTypes.Name = "buttonSaveTruckTypes";
+            this.buttonSaveTruckTypes.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveTruckTypes.TabIndex = 3;
+            this.buttonSaveTruckTypes.Text = "Save";
+            this.buttonSaveTruckTypes.UseVisualStyleBackColor = true;
+            this.buttonSaveTruckTypes.Click += new System.EventHandler(this.buttonSaveTruckTypes_Click);
+            // 
+            // dGVTruckTypes
+            // 
+            this.dGVTruckTypes.AllowUserToOrderColumns = true;
+            this.dGVTruckTypes.AutoGenerateColumns = false;
+            this.dGVTruckTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVTruckTypes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tYPEIDDataGridViewTextBoxColumn,
+            this.tYPEMODELDataGridViewTextBoxColumn,
+            this.tYPECAPACITYDataGridViewTextBoxColumn,
+            this.tYPECLASSDataGridViewTextBoxColumn,
+            this.tRUCKsDataGridViewTextBoxColumn});
+            this.dGVTruckTypes.DataSource = this.tRUCKTYPESBindingSource;
+            this.dGVTruckTypes.Location = new System.Drawing.Point(-4, 35);
+            this.dGVTruckTypes.Name = "dGVTruckTypes";
+            this.dGVTruckTypes.Size = new System.Drawing.Size(802, 390);
+            this.dGVTruckTypes.TabIndex = 1;
             // 
             // tYPEIDDataGridViewTextBoxColumn
             // 
@@ -855,9 +766,60 @@
             this.tRUCKsDataGridViewTextBoxColumn.HeaderText = "TRUCKs";
             this.tRUCKsDataGridViewTextBoxColumn.Name = "tRUCKsDataGridViewTextBoxColumn";
             // 
-            // tRAILERBindingSource
+            // tRUCKTYPESBindingSource
             // 
-            this.tRAILERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRAILER);
+            this.tRUCKTYPESBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK_TYPES);
+            // 
+            // tabPageTrailers
+            // 
+            this.tabPageTrailers.Controls.Add(this.buttonDeleteTrailers);
+            this.tabPageTrailers.Controls.Add(this.buttonSaveTrailers);
+            this.tabPageTrailers.Controls.Add(this.dGVTrailers);
+            this.tabPageTrailers.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTrailers.Name = "tabPageTrailers";
+            this.tabPageTrailers.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTrailers.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrailers.TabIndex = 6;
+            this.tabPageTrailers.Text = "Trailers";
+            this.tabPageTrailers.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteTrailers
+            // 
+            this.buttonDeleteTrailers.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteTrailers.Name = "buttonDeleteTrailers";
+            this.buttonDeleteTrailers.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteTrailers.TabIndex = 4;
+            this.buttonDeleteTrailers.Text = "Delete";
+            this.buttonDeleteTrailers.UseVisualStyleBackColor = true;
+            this.buttonDeleteTrailers.Click += new System.EventHandler(this.buttonDeleteTrailers_Click);
+            // 
+            // buttonSaveTrailers
+            // 
+            this.buttonSaveTrailers.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveTrailers.Name = "buttonSaveTrailers";
+            this.buttonSaveTrailers.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveTrailers.TabIndex = 3;
+            this.buttonSaveTrailers.Text = "Save";
+            this.buttonSaveTrailers.UseVisualStyleBackColor = true;
+            this.buttonSaveTrailers.Click += new System.EventHandler(this.buttonSaveTrailers_Click);
+            // 
+            // dGVTrailers
+            // 
+            this.dGVTrailers.AllowUserToOrderColumns = true;
+            this.dGVTrailers.AutoGenerateColumns = false;
+            this.dGVTrailers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVTrailers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tRAILERIDDataGridViewTextBoxColumn,
+            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn,
+            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn,
+            this.tRAILERTYPEDataGridViewTextBoxColumn,
+            this.tRAILERTYPESDataGridViewTextBoxColumn,
+            this.tRUCKsDataGridViewTextBoxColumn1});
+            this.dGVTrailers.DataSource = this.tRAILERBindingSource;
+            this.dGVTrailers.Location = new System.Drawing.Point(-4, 35);
+            this.dGVTrailers.Name = "dGVTrailers";
+            this.dGVTrailers.Size = new System.Drawing.Size(802, 390);
+            this.dGVTrailers.TabIndex = 1;
             // 
             // tRAILERIDDataGridViewTextBoxColumn
             // 
@@ -895,9 +857,59 @@
             this.tRUCKsDataGridViewTextBoxColumn1.HeaderText = "TRUCKs";
             this.tRUCKsDataGridViewTextBoxColumn1.Name = "tRUCKsDataGridViewTextBoxColumn1";
             // 
-            // tRAILERTYPESBindingSource
+            // tRAILERBindingSource
             // 
-            this.tRAILERTYPESBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRAILER_TYPES);
+            this.tRAILERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRAILER);
+            // 
+            // tabPageTrailerTypes
+            // 
+            this.tabPageTrailerTypes.Controls.Add(this.buttonDeleteTrailerType);
+            this.tabPageTrailerTypes.Controls.Add(this.buttonSaveTrailerType);
+            this.tabPageTrailerTypes.Controls.Add(this.dGVTrailerTypes);
+            this.tabPageTrailerTypes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTrailerTypes.Name = "tabPageTrailerTypes";
+            this.tabPageTrailerTypes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTrailerTypes.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrailerTypes.TabIndex = 7;
+            this.tabPageTrailerTypes.Text = "Trailer types";
+            this.tabPageTrailerTypes.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteTrailerType
+            // 
+            this.buttonDeleteTrailerType.Location = new System.Drawing.Point(115, 6);
+            this.buttonDeleteTrailerType.Name = "buttonDeleteTrailerType";
+            this.buttonDeleteTrailerType.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteTrailerType.TabIndex = 4;
+            this.buttonDeleteTrailerType.Text = "Delete";
+            this.buttonDeleteTrailerType.UseVisualStyleBackColor = true;
+            this.buttonDeleteTrailerType.Click += new System.EventHandler(this.buttonDeleteTrailerType_Click);
+            // 
+            // buttonSaveTrailerType
+            // 
+            this.buttonSaveTrailerType.Location = new System.Drawing.Point(9, 6);
+            this.buttonSaveTrailerType.Name = "buttonSaveTrailerType";
+            this.buttonSaveTrailerType.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveTrailerType.TabIndex = 3;
+            this.buttonSaveTrailerType.Text = "Save";
+            this.buttonSaveTrailerType.UseVisualStyleBackColor = true;
+            this.buttonSaveTrailerType.Click += new System.EventHandler(this.buttonSaveTrailerType_Click);
+            // 
+            // dGVTrailerTypes
+            // 
+            this.dGVTrailerTypes.AllowUserToOrderColumns = true;
+            this.dGVTrailerTypes.AutoGenerateColumns = false;
+            this.dGVTrailerTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVTrailerTypes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tYPETRIDDataGridViewTextBoxColumn,
+            this.tYPETRMODELDataGridViewTextBoxColumn,
+            this.tYPETRCAPACITYDataGridViewTextBoxColumn,
+            this.tYPETRTYPEDataGridViewTextBoxColumn,
+            this.tRAILERsDataGridViewTextBoxColumn});
+            this.dGVTrailerTypes.DataSource = this.tRAILERTYPESBindingSource;
+            this.dGVTrailerTypes.Location = new System.Drawing.Point(-4, 35);
+            this.dGVTrailerTypes.Name = "dGVTrailerTypes";
+            this.dGVTrailerTypes.Size = new System.Drawing.Size(802, 390);
+            this.dGVTrailerTypes.TabIndex = 1;
             // 
             // tYPETRIDDataGridViewTextBoxColumn
             // 
@@ -929,6 +941,10 @@
             this.tRAILERsDataGridViewTextBoxColumn.HeaderText = "TRAILERs";
             this.tRAILERsDataGridViewTextBoxColumn.Name = "tRAILERsDataGridViewTextBoxColumn";
             // 
+            // tRAILERTYPESBindingSource
+            // 
+            this.tRAILERTYPESBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRAILER_TYPES);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -939,28 +955,28 @@
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPageCities.ResumeLayout(false);
-            this.tabPageDepartures.ResumeLayout(false);
-            this.tabPageCargos.ResumeLayout(false);
-            this.tabPageTrucker.ResumeLayout(false);
-            this.tabPageTrucks.ResumeLayout(false);
-            this.tabPageTruckTypes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVCities)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVDepartures)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVCargos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTrucks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckTypes)).EndInit();
-            this.tabPageTrailers.ResumeLayout(false);
-            this.tabPageTrailerTypes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailerTypes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cITyBindingSource)).EndInit();
+            this.tabPageDepartures.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVDepartures)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dEPARTUREBindingSource)).EndInit();
+            this.tabPageCargos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVCargos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cARGOBindingSource)).EndInit();
+            this.tabPageTrucker.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRUCKERBindingSource)).EndInit();
+            this.tabPageTrucks.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTrucks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRUCKBindingSource)).EndInit();
+            this.tabPageTruckTypes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTruckTypes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRUCKTYPESBindingSource)).EndInit();
+            this.tabPageTrailers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRAILERBindingSource)).EndInit();
+            this.tabPageTrailerTypes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVTrailerTypes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRAILERTYPESBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -987,20 +1003,20 @@
         private System.Windows.Forms.DataGridView dGVTrailerTypes;
         private System.Windows.Forms.Button buttonDeleteCities;
         private System.Windows.Forms.Button buttonSaveCities;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button buttonDeleteDepartures;
+        private System.Windows.Forms.Button buttonSaveDepartures;
+        private System.Windows.Forms.Button buttonDeleteCargos;
+        private System.Windows.Forms.Button buttonSaveCargos;
+        private System.Windows.Forms.Button buttonDeleteTruckers;
+        private System.Windows.Forms.Button buttonSaveTruckers;
+        private System.Windows.Forms.Button buttonDeleteTrucks;
+        private System.Windows.Forms.Button buttonSaveTrucks;
+        private System.Windows.Forms.Button buttonDeleteTruckTypes;
+        private System.Windows.Forms.Button buttonSaveTruckTypes;
+        private System.Windows.Forms.Button buttonDeleteTrailers;
+        private System.Windows.Forms.Button buttonSaveTrailers;
+        private System.Windows.Forms.Button buttonDeleteTrailerType;
+        private System.Windows.Forms.Button buttonSaveTrailerType;
         private System.Windows.Forms.DataGridViewTextBoxColumn cITYIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cITYNAMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dEPARTURESDataGridViewTextBoxColumn;
