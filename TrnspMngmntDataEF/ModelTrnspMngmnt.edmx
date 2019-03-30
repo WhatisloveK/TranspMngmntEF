@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DBTransportManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CARGOS">
+          <Key>
+            <PropertyRef Name="CG_ID" />
+          </Key>
+          <Property Name="CG_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CG_NUMBER" Type="int" />
+          <Property Name="CG_WEIGHT" Type="int" />
+          <Property Name="CG_DEPARTURE_DATE" Type="date" />
+          <Property Name="CG_ARRIVAL_DATE" Type="date" />
+          <Property Name="CG_DESTINATION" Type="int" />
+          <Property Name="CG_DEPARTURE_PLACE" Type="int" />
+          <Property Name="CG_TRUCKER" Type="int" />
+          <Property Name="CG_DEPARTURE_TIME" Type="time" Precision="0" />
+          <Property Name="CG_ARRIVAL_TIME" Type="time" Precision="0" />
+        </EntityType>
+        <EntityType Name="CITIES">
+          <Key>
+            <PropertyRef Name="CITY_ID" />
+          </Key>
+          <Property Name="CITY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CITY_NAME" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DEPARTURES">
+          <Key>
+            <PropertyRef Name="DP_ID" />
+          </Key>
+          <Property Name="DP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DP_CITY" Type="int" />
+          <Property Name="DP_ADRESS" Type="nvarchar" MaxLength="50" />
+          <Property Name="DP_NAME" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TRAILER">
+          <Key>
+            <PropertyRef Name="TRAILER_ID" />
+          </Key>
+          <Property Name="TRAILER_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TRAILER_LAST_OVERHAUL" Type="date" />
+          <Property Name="TRAILER_SERIAL_NUMBER" Type="int" />
+          <Property Name="TRAILER_TYPE" Type="int" />
+        </EntityType>
+        <EntityType Name="TRAILER_TYPES">
+          <Key>
+            <PropertyRef Name="TYPE_TR_ID" />
+          </Key>
+          <Property Name="TYPE_TR_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TYPE_TR_MODEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="TYPE_TR_CAPACITY" Type="int" />
+          <Property Name="TYPE_TR_TYPE" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TRUCK">
+          <Key>
+            <PropertyRef Name="TRUCK_ID" />
+          </Key>
+          <Property Name="TRUCK_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TRUCK_NUMBER" Type="int" />
+          <Property Name="TRUCK_TYPE" Type="int" />
+          <Property Name="TRUCK_INSURANCE_EXPIRATION" Type="date" />
+          <Property Name="TRUCK_TRAILER" Type="int" />
+        </EntityType>
+        <EntityType Name="TRUCK_TYPES">
+          <Key>
+            <PropertyRef Name="TYPE_ID" />
+          </Key>
+          <Property Name="TYPE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TYPE_MODEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="TYPE_CAPACITY" Type="int" />
+          <Property Name="TYPE_CLASS" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TRUCKERS">
+          <Key>
+            <PropertyRef Name="TR_ID" />
+          </Key>
+          <Property Name="TR_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TR_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="TR_SURNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="TR_BIRTH" Type="date" />
+          <Property Name="TR_START_DRIVE" Type="date" />
+          <Property Name="TR_TRUCK" Type="int" />
+        </EntityType>
+        <Association Name="FK_CARGOS_DEPARTURES">
+          <End Role="DEPARTURES" Type="Self.DEPARTURES" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPARTURES">
+              <PropertyRef Name="DP_ID" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="CG_DEPARTURE_PLACE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CARGOS_DEPARTURES1">
+          <End Role="DEPARTURES" Type="Self.DEPARTURES" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPARTURES">
+              <PropertyRef Name="DP_ID" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="CG_DESTINATION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CARGOS_TRUCKERS">
+          <End Role="TRUCKERS" Type="Self.TRUCKERS" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUCKERS">
+              <PropertyRef Name="TR_ID" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="CG_TRUCKER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DEPARTURES_CITIES">
+          <End Role="CITIES" Type="Self.CITIES" Multiplicity="0..1" />
+          <End Role="DEPARTURES" Type="Self.DEPARTURES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CITIES">
+              <PropertyRef Name="CITY_ID" />
+            </Principal>
+            <Dependent Role="DEPARTURES">
+              <PropertyRef Name="DP_CITY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRAILER_TRAILER_TYPES">
+          <End Role="TRAILER_TYPES" Type="Self.TRAILER_TYPES" Multiplicity="0..1" />
+          <End Role="TRAILER" Type="Self.TRAILER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRAILER_TYPES">
+              <PropertyRef Name="TYPE_TR_ID" />
+            </Principal>
+            <Dependent Role="TRAILER">
+              <PropertyRef Name="TRAILER_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRUCK_TRAILER">
+          <End Role="TRAILER" Type="Self.TRAILER" Multiplicity="0..1" />
+          <End Role="TRUCK" Type="Self.TRUCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRAILER">
+              <PropertyRef Name="TRAILER_ID" />
+            </Principal>
+            <Dependent Role="TRUCK">
+              <PropertyRef Name="TRUCK_TRAILER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRUCK_TRUCK_TYPES">
+          <End Role="TRUCK_TYPES" Type="Self.TRUCK_TYPES" Multiplicity="0..1" />
+          <End Role="TRUCK" Type="Self.TRUCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUCK_TYPES">
+              <PropertyRef Name="TYPE_ID" />
+            </Principal>
+            <Dependent Role="TRUCK">
+              <PropertyRef Name="TRUCK_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRUCKERS_TRUCK">
+          <End Role="TRUCK" Type="Self.TRUCK" Multiplicity="0..1" />
+          <End Role="TRUCKERS" Type="Self.TRUCKERS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUCK">
+              <PropertyRef Name="TRUCK_ID" />
+            </Principal>
+            <Dependent Role="TRUCKERS">
+              <PropertyRef Name="TR_TRUCK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBTransportManagementModelStoreContainer">
+          <EntitySet Name="CARGOS" EntityType="Self.CARGOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CITIES" EntityType="Self.CITIES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DEPARTURES" EntityType="Self.DEPARTURES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRAILER" EntityType="Self.TRAILER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRAILER_TYPES" EntityType="Self.TRAILER_TYPES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRUCK" EntityType="Self.TRUCK" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRUCK_TYPES" EntityType="Self.TRUCK_TYPES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRUCKERS" EntityType="Self.TRUCKERS" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CARGOS_DEPARTURES" Association="Self.FK_CARGOS_DEPARTURES">
+            <End Role="DEPARTURES" EntitySet="DEPARTURES" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CARGOS_DEPARTURES1" Association="Self.FK_CARGOS_DEPARTURES1">
+            <End Role="DEPARTURES" EntitySet="DEPARTURES" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CARGOS_TRUCKERS" Association="Self.FK_CARGOS_TRUCKERS">
+            <End Role="TRUCKERS" EntitySet="TRUCKERS" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DEPARTURES_CITIES" Association="Self.FK_DEPARTURES_CITIES">
+            <End Role="CITIES" EntitySet="CITIES" />
+            <End Role="DEPARTURES" EntitySet="DEPARTURES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRAILER_TRAILER_TYPES" Association="Self.FK_TRAILER_TRAILER_TYPES">
+            <End Role="TRAILER_TYPES" EntitySet="TRAILER_TYPES" />
+            <End Role="TRAILER" EntitySet="TRAILER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRUCK_TRAILER" Association="Self.FK_TRUCK_TRAILER">
+            <End Role="TRAILER" EntitySet="TRAILER" />
+            <End Role="TRUCK" EntitySet="TRUCK" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRUCK_TRUCK_TYPES" Association="Self.FK_TRUCK_TRUCK_TYPES">
+            <End Role="TRUCK_TYPES" EntitySet="TRUCK_TYPES" />
+            <End Role="TRUCK" EntitySet="TRUCK" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRUCKERS_TRUCK" Association="Self.FK_TRUCKERS_TRUCK">
+            <End Role="TRUCK" EntitySet="TRUCK" />
+            <End Role="TRUCKERS" EntitySet="TRUCKERS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBTransportManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CARGO">
+          <Key>
+            <PropertyRef Name="CG_ID" />
+          </Key>
+          <Property Name="CG_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CG_NUMBER" Type="Int32" />
+          <Property Name="CG_WEIGHT" Type="Int32" />
+          <Property Name="CG_DEPARTURE_DATE" Type="DateTime" Precision="0" />
+          <Property Name="CG_ARRIVAL_DATE" Type="DateTime" Precision="0" />
+          <Property Name="CG_DESTINATION" Type="Int32" />
+          <Property Name="CG_DEPARTURE_PLACE" Type="Int32" />
+          <Property Name="CG_TRUCKER" Type="Int32" />
+          <Property Name="CG_DEPARTURE_TIME" Type="Time" Precision="0" />
+          <Property Name="CG_ARRIVAL_TIME" Type="Time" Precision="0" />
+          <NavigationProperty Name="DEPARTURE" Relationship="Self.FK_CARGOS_DEPARTURES" FromRole="CARGOS" ToRole="DEPARTURES" />
+          <NavigationProperty Name="DEPARTURE1" Relationship="Self.FK_CARGOS_DEPARTURES1" FromRole="CARGOS" ToRole="DEPARTURES" />
+          <NavigationProperty Name="TRUCKER" Relationship="Self.FK_CARGOS_TRUCKERS" FromRole="CARGOS" ToRole="TRUCKERS" />
+        </EntityType>
+        <EntityType Name="CITy">
+          <Key>
+            <PropertyRef Name="CITY_ID" />
+          </Key>
+          <Property Name="CITY_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CITY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DEPARTURES" Relationship="Self.FK_DEPARTURES_CITIES" FromRole="CITIES" ToRole="DEPARTURES" />
+        </EntityType>
+        <EntityType Name="DEPARTURE">
+          <Key>
+            <PropertyRef Name="DP_ID" />
+          </Key>
+          <Property Name="DP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DP_CITY" Type="Int32" />
+          <Property Name="DP_ADRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DP_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CARGOS" Relationship="Self.FK_CARGOS_DEPARTURES" FromRole="DEPARTURES" ToRole="CARGOS" />
+          <NavigationProperty Name="CARGOS1" Relationship="Self.FK_CARGOS_DEPARTURES1" FromRole="DEPARTURES" ToRole="CARGOS" />
+          <NavigationProperty Name="CITy" Relationship="Self.FK_DEPARTURES_CITIES" FromRole="DEPARTURES" ToRole="CITIES" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TRAILER">
+          <Key>
+            <PropertyRef Name="TRAILER_ID" />
+          </Key>
+          <Property Name="TRAILER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TRAILER_LAST_OVERHAUL" Type="DateTime" Precision="0" />
+          <Property Name="TRAILER_SERIAL_NUMBER" Type="Int32" />
+          <Property Name="TRAILER_TYPE" Type="Int32" />
+          <NavigationProperty Name="TRAILER_TYPES" Relationship="Self.FK_TRAILER_TRAILER_TYPES" FromRole="TRAILER" ToRole="TRAILER_TYPES" />
+          <NavigationProperty Name="TRUCKs" Relationship="Self.FK_TRUCK_TRAILER" FromRole="TRAILER" ToRole="TRUCK" />
+        </EntityType>
+        <EntityType Name="TRAILER_TYPES">
+          <Key>
+            <PropertyRef Name="TYPE_TR_ID" />
+          </Key>
+          <Property Name="TYPE_TR_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TYPE_TR_MODEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TYPE_TR_CAPACITY" Type="Int32" />
+          <Property Name="TYPE_TR_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TRAILERs" Relationship="Self.FK_TRAILER_TRAILER_TYPES" FromRole="TRAILER_TYPES" ToRole="TRAILER" />
+        </EntityType>
+        <EntityType Name="TRUCK">
+          <Key>
+            <PropertyRef Name="TRUCK_ID" />
+          </Key>
+          <Property Name="TRUCK_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TRUCK_NUMBER" Type="Int32" />
+          <Property Name="TRUCK_TYPE" Type="Int32" />
+          <Property Name="TRUCK_INSURANCE_EXPIRATION" Type="DateTime" Precision="0" />
+          <Property Name="TRUCK_TRAILER" Type="Int32" />
+          <NavigationProperty Name="TRAILER" Relationship="Self.FK_TRUCK_TRAILER" FromRole="TRUCK" ToRole="TRAILER" />
+          <NavigationProperty Name="TRUCK_TYPES" Relationship="Self.FK_TRUCK_TRUCK_TYPES" FromRole="TRUCK" ToRole="TRUCK_TYPES" />
+          <NavigationProperty Name="TRUCKERS" Relationship="Self.FK_TRUCKERS_TRUCK" FromRole="TRUCK" ToRole="TRUCKERS" />
+        </EntityType>
+        <EntityType Name="TRUCK_TYPES">
+          <Key>
+            <PropertyRef Name="TYPE_ID" />
+          </Key>
+          <Property Name="TYPE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TYPE_MODEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TYPE_CAPACITY" Type="Int32" />
+          <Property Name="TYPE_CLASS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TRUCKs" Relationship="Self.FK_TRUCK_TRUCK_TYPES" FromRole="TRUCK_TYPES" ToRole="TRUCK" />
+        </EntityType>
+        <EntityType Name="TRUCKER">
+          <Key>
+            <PropertyRef Name="TR_ID" />
+          </Key>
+          <Property Name="TR_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TR_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TR_SURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TR_BIRTH" Type="DateTime" Precision="0" />
+          <Property Name="TR_START_DRIVE" Type="DateTime" Precision="0" />
+          <Property Name="TR_TRUCK" Type="Int32" />
+          <NavigationProperty Name="CARGOS" Relationship="Self.FK_CARGOS_TRUCKERS" FromRole="TRUCKERS" ToRole="CARGOS" />
+          <NavigationProperty Name="TRUCK" Relationship="Self.FK_TRUCKERS_TRUCK" FromRole="TRUCKERS" ToRole="TRUCK" />
+        </EntityType>
+        <Association Name="FK_CARGOS_DEPARTURES">
+          <End Role="DEPARTURES" Type="Self.DEPARTURE" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPARTURES">
+              <PropertyRef Name="DP_ID" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="CG_DEPARTURE_PLACE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CARGOS_DEPARTURES1">
+          <End Role="DEPARTURES" Type="Self.DEPARTURE" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPARTURES">
+              <PropertyRef Name="DP_ID" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="CG_DESTINATION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CARGOS_TRUCKERS">
+          <End Role="TRUCKERS" Type="Self.TRUCKER" Multiplicity="0..1" />
+          <End Role="CARGOS" Type="Self.CARGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUCKERS">
+              <PropertyRef Name="TR_ID" />
+            </Principal>
+            <Dependent Role="CARGOS">
+              <PropertyRef Name="CG_TRUCKER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DEPARTURES_CITIES">
+          <End Role="CITIES" Type="Self.CITy" Multiplicity="0..1" />
+          <End Role="DEPARTURES" Type="Self.DEPARTURE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CITIES">
+              <PropertyRef Name="CITY_ID" />
+            </Principal>
+            <Dependent Role="DEPARTURES">
+              <PropertyRef Name="DP_CITY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRAILER_TRAILER_TYPES">
+          <End Role="TRAILER_TYPES" Type="Self.TRAILER_TYPES" Multiplicity="0..1" />
+          <End Role="TRAILER" Type="Self.TRAILER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRAILER_TYPES">
+              <PropertyRef Name="TYPE_TR_ID" />
+            </Principal>
+            <Dependent Role="TRAILER">
+              <PropertyRef Name="TRAILER_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRUCK_TRAILER">
+          <End Role="TRAILER" Type="Self.TRAILER" Multiplicity="0..1" />
+          <End Role="TRUCK" Type="Self.TRUCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRAILER">
+              <PropertyRef Name="TRAILER_ID" />
+            </Principal>
+            <Dependent Role="TRUCK">
+              <PropertyRef Name="TRUCK_TRAILER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRUCK_TRUCK_TYPES">
+          <End Role="TRUCK_TYPES" Type="Self.TRUCK_TYPES" Multiplicity="0..1" />
+          <End Role="TRUCK" Type="Self.TRUCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUCK_TYPES">
+              <PropertyRef Name="TYPE_ID" />
+            </Principal>
+            <Dependent Role="TRUCK">
+              <PropertyRef Name="TRUCK_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRUCKERS_TRUCK">
+          <End Role="TRUCK" Type="Self.TRUCK" Multiplicity="0..1" />
+          <End Role="TRUCKERS" Type="Self.TRUCKER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUCK">
+              <PropertyRef Name="TRUCK_ID" />
+            </Principal>
+            <Dependent Role="TRUCKERS">
+              <PropertyRef Name="TR_TRUCK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBTransportManagementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CARGOS" EntityType="Self.CARGO" />
+          <EntitySet Name="CITIES" EntityType="Self.CITy" />
+          <EntitySet Name="DEPARTURES" EntityType="Self.DEPARTURE" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="TRAILERs" EntityType="Self.TRAILER" />
+          <EntitySet Name="TRAILER_TYPES" EntityType="Self.TRAILER_TYPES" />
+          <EntitySet Name="TRUCKs" EntityType="Self.TRUCK" />
+          <EntitySet Name="TRUCK_TYPES" EntityType="Self.TRUCK_TYPES" />
+          <EntitySet Name="TRUCKERS" EntityType="Self.TRUCKER" />
+          <AssociationSet Name="FK_CARGOS_DEPARTURES" Association="Self.FK_CARGOS_DEPARTURES">
+            <End Role="DEPARTURES" EntitySet="DEPARTURES" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CARGOS_DEPARTURES1" Association="Self.FK_CARGOS_DEPARTURES1">
+            <End Role="DEPARTURES" EntitySet="DEPARTURES" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CARGOS_TRUCKERS" Association="Self.FK_CARGOS_TRUCKERS">
+            <End Role="TRUCKERS" EntitySet="TRUCKERS" />
+            <End Role="CARGOS" EntitySet="CARGOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DEPARTURES_CITIES" Association="Self.FK_DEPARTURES_CITIES">
+            <End Role="CITIES" EntitySet="CITIES" />
+            <End Role="DEPARTURES" EntitySet="DEPARTURES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRAILER_TRAILER_TYPES" Association="Self.FK_TRAILER_TRAILER_TYPES">
+            <End Role="TRAILER_TYPES" EntitySet="TRAILER_TYPES" />
+            <End Role="TRAILER" EntitySet="TRAILERs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRUCK_TRAILER" Association="Self.FK_TRUCK_TRAILER">
+            <End Role="TRAILER" EntitySet="TRAILERs" />
+            <End Role="TRUCK" EntitySet="TRUCKs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRUCK_TRUCK_TYPES" Association="Self.FK_TRUCK_TRUCK_TYPES">
+            <End Role="TRUCK_TYPES" EntitySet="TRUCK_TYPES" />
+            <End Role="TRUCK" EntitySet="TRUCKs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRUCKERS_TRUCK" Association="Self.FK_TRUCKERS_TRUCK">
+            <End Role="TRUCK" EntitySet="TRUCKs" />
+            <End Role="TRUCKERS" EntitySet="TRUCKERS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBTransportManagementModelStoreContainer" CdmEntityContainer="DBTransportManagementEntities">
+          <EntitySetMapping Name="CARGOS">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.CARGO">
+              <MappingFragment StoreEntitySet="CARGOS">
+                <ScalarProperty Name="CG_ID" ColumnName="CG_ID" />
+                <ScalarProperty Name="CG_NUMBER" ColumnName="CG_NUMBER" />
+                <ScalarProperty Name="CG_WEIGHT" ColumnName="CG_WEIGHT" />
+                <ScalarProperty Name="CG_DEPARTURE_DATE" ColumnName="CG_DEPARTURE_DATE" />
+                <ScalarProperty Name="CG_ARRIVAL_DATE" ColumnName="CG_ARRIVAL_DATE" />
+                <ScalarProperty Name="CG_DESTINATION" ColumnName="CG_DESTINATION" />
+                <ScalarProperty Name="CG_DEPARTURE_PLACE" ColumnName="CG_DEPARTURE_PLACE" />
+                <ScalarProperty Name="CG_TRUCKER" ColumnName="CG_TRUCKER" />
+                <ScalarProperty Name="CG_DEPARTURE_TIME" ColumnName="CG_DEPARTURE_TIME" />
+                <ScalarProperty Name="CG_ARRIVAL_TIME" ColumnName="CG_ARRIVAL_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CITIES">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.CITy">
+              <MappingFragment StoreEntitySet="CITIES">
+                <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+                <ScalarProperty Name="CITY_NAME" ColumnName="CITY_NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DEPARTURES">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.DEPARTURE">
+              <MappingFragment StoreEntitySet="DEPARTURES">
+                <ScalarProperty Name="DP_ID" ColumnName="DP_ID" />
+                <ScalarProperty Name="DP_CITY" ColumnName="DP_CITY" />
+                <ScalarProperty Name="DP_ADRESS" ColumnName="DP_ADRESS" />
+                <ScalarProperty Name="DP_NAME" ColumnName="DP_NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRAILERs">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.TRAILER">
+              <MappingFragment StoreEntitySet="TRAILER">
+                <ScalarProperty Name="TRAILER_ID" ColumnName="TRAILER_ID" />
+                <ScalarProperty Name="TRAILER_LAST_OVERHAUL" ColumnName="TRAILER_LAST_OVERHAUL" />
+                <ScalarProperty Name="TRAILER_SERIAL_NUMBER" ColumnName="TRAILER_SERIAL_NUMBER" />
+                <ScalarProperty Name="TRAILER_TYPE" ColumnName="TRAILER_TYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRAILER_TYPES">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.TRAILER_TYPES">
+              <MappingFragment StoreEntitySet="TRAILER_TYPES">
+                <ScalarProperty Name="TYPE_TR_ID" ColumnName="TYPE_TR_ID" />
+                <ScalarProperty Name="TYPE_TR_MODEL" ColumnName="TYPE_TR_MODEL" />
+                <ScalarProperty Name="TYPE_TR_CAPACITY" ColumnName="TYPE_TR_CAPACITY" />
+                <ScalarProperty Name="TYPE_TR_TYPE" ColumnName="TYPE_TR_TYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRUCKs">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.TRUCK">
+              <MappingFragment StoreEntitySet="TRUCK">
+                <ScalarProperty Name="TRUCK_ID" ColumnName="TRUCK_ID" />
+                <ScalarProperty Name="TRUCK_NUMBER" ColumnName="TRUCK_NUMBER" />
+                <ScalarProperty Name="TRUCK_TYPE" ColumnName="TRUCK_TYPE" />
+                <ScalarProperty Name="TRUCK_INSURANCE_EXPIRATION" ColumnName="TRUCK_INSURANCE_EXPIRATION" />
+                <ScalarProperty Name="TRUCK_TRAILER" ColumnName="TRUCK_TRAILER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRUCK_TYPES">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.TRUCK_TYPES">
+              <MappingFragment StoreEntitySet="TRUCK_TYPES">
+                <ScalarProperty Name="TYPE_ID" ColumnName="TYPE_ID" />
+                <ScalarProperty Name="TYPE_MODEL" ColumnName="TYPE_MODEL" />
+                <ScalarProperty Name="TYPE_CAPACITY" ColumnName="TYPE_CAPACITY" />
+                <ScalarProperty Name="TYPE_CLASS" ColumnName="TYPE_CLASS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRUCKERS">
+            <EntityTypeMapping TypeName="DBTransportManagementModel.TRUCKER">
+              <MappingFragment StoreEntitySet="TRUCKERS">
+                <ScalarProperty Name="TR_ID" ColumnName="TR_ID" />
+                <ScalarProperty Name="TR_NAME" ColumnName="TR_NAME" />
+                <ScalarProperty Name="TR_SURNAME" ColumnName="TR_SURNAME" />
+                <ScalarProperty Name="TR_BIRTH" ColumnName="TR_BIRTH" />
+                <ScalarProperty Name="TR_START_DRIVE" ColumnName="TR_START_DRIVE" />
+                <ScalarProperty Name="TR_TRUCK" ColumnName="TR_TRUCK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
