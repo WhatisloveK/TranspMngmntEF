@@ -34,44 +34,50 @@
             this.buttonDeleteCities = new System.Windows.Forms.Button();
             this.buttonSaveCities = new System.Windows.Forms.Button();
             this.dGVCities = new System.Windows.Forms.DataGridView();
-            this.cITYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cITYNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dEPARTURESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cITyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPageDepartures = new System.Windows.Forms.TabPage();
             this.buttonDeleteDepartures = new System.Windows.Forms.Button();
             this.buttonSaveDepartures = new System.Windows.Forms.Button();
             this.dGVDepartures = new System.Windows.Forms.DataGridView();
-            this.dPIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dPCITYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dPADRESSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dPNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARGOSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARGOS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cITyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dEPARTUREBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPageCargos = new System.Windows.Forms.TabPage();
             this.buttonDeleteCargos = new System.Windows.Forms.Button();
             this.buttonSaveCargos = new System.Windows.Forms.Button();
             this.dGVCargos = new System.Windows.Forms.DataGridView();
-            this.cGIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGWEIGHTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGDEPARTUREDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGARRIVALDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGDESTINATIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGTRUCKERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGDEPARTURETIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGARRIVALTIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dEPARTUREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dEPARTURE1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tRUCKERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARGOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPageTrucker = new System.Windows.Forms.TabPage();
             this.buttonDeleteTruckers = new System.Windows.Forms.Button();
             this.buttonSaveTruckers = new System.Windows.Forms.Button();
             this.dGVTruckers = new System.Windows.Forms.DataGridView();
+            this.tabPageTrucks = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTrucks = new System.Windows.Forms.Button();
+            this.buttonSaveTrucks = new System.Windows.Forms.Button();
+            this.dGVTrucks = new System.Windows.Forms.DataGridView();
+            this.tabPageTruckTypes = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTruckTypes = new System.Windows.Forms.Button();
+            this.buttonSaveTruckTypes = new System.Windows.Forms.Button();
+            this.dGVTruckTypes = new System.Windows.Forms.DataGridView();
+            this.tabPageTrailers = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTrailers = new System.Windows.Forms.Button();
+            this.buttonSaveTrailers = new System.Windows.Forms.Button();
+            this.dGVTrailers = new System.Windows.Forms.DataGridView();
+            this.tabPageTrailerTypes = new System.Windows.Forms.TabPage();
+            this.buttonDeleteTrailerType = new System.Windows.Forms.Button();
+            this.buttonSaveTrailerType = new System.Windows.Forms.Button();
+            this.dGVTrailerTypes = new System.Windows.Forms.DataGridView();
+            this.cITyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dEPARTUREBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cGIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGDEPARTUREDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGDEPARTURETIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGTRUCKERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGWEIGHTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGARRIVALDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGARRIVALTIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGDESTINATIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dEPARTUREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dEPARTURE1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tRUCKERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cARGOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tRIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRSURNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,10 +87,6 @@
             this.cARGOSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKERBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabPageTrucks = new System.Windows.Forms.TabPage();
-            this.buttonDeleteTrucks = new System.Windows.Forms.Button();
-            this.buttonSaveTrucks = new System.Windows.Forms.Button();
-            this.dGVTrucks = new System.Windows.Forms.DataGridView();
             this.tRUCKIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKTYPEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,20 +96,12 @@
             this.tRUCKTYPESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKERSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabPageTruckTypes = new System.Windows.Forms.TabPage();
-            this.buttonDeleteTruckTypes = new System.Windows.Forms.Button();
-            this.buttonSaveTruckTypes = new System.Windows.Forms.Button();
-            this.dGVTruckTypes = new System.Windows.Forms.DataGridView();
             this.tYPEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPEMODELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPECAPACITYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPECLASSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKTYPESBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabPageTrailers = new System.Windows.Forms.TabPage();
-            this.buttonDeleteTrailers = new System.Windows.Forms.Button();
-            this.buttonSaveTrailers = new System.Windows.Forms.Button();
-            this.dGVTrailers = new System.Windows.Forms.DataGridView();
             this.tRAILERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -115,40 +109,46 @@
             this.tRAILERTYPESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRUCKsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabPageTrailerTypes = new System.Windows.Forms.TabPage();
-            this.buttonDeleteTrailerType = new System.Windows.Forms.Button();
-            this.buttonSaveTrailerType = new System.Windows.Forms.Button();
-            this.dGVTrailerTypes = new System.Windows.Forms.DataGridView();
             this.tYPETRIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPETRMODELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPETRCAPACITYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tYPETRTYPEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tRAILERTYPESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cITYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cITYNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dEPARTURESDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dPIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dPCITYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dPADRESSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dPNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cARGOSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cARGOS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cITyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPageCities.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVCities)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cITyBindingSource)).BeginInit();
             this.tabPageDepartures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVDepartures)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dEPARTUREBindingSource)).BeginInit();
             this.tabPageCargos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVCargos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cARGOBindingSource)).BeginInit();
             this.tabPageTrucker.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVTruckers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRUCKERBindingSource)).BeginInit();
             this.tabPageTrucks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVTrucks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRUCKBindingSource)).BeginInit();
             this.tabPageTruckTypes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVTruckTypes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRUCKTYPESBindingSource)).BeginInit();
             this.tabPageTrailers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVTrailers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRAILERBindingSource)).BeginInit();
             this.tabPageTrailerTypes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVTrailerTypes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cITyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dEPARTUREBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cARGOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRUCKERBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRUCKBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRUCKTYPESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRAILERBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRAILERTYPESBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,7 +165,7 @@
             this.tabControl1.Location = new System.Drawing.Point(-1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(802, 451);
+            this.tabControl1.Size = new System.Drawing.Size(947, 451);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPageCities
@@ -176,7 +176,7 @@
             this.tabPageCities.Location = new System.Drawing.Point(4, 22);
             this.tabPageCities.Name = "tabPageCities";
             this.tabPageCities.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCities.Size = new System.Drawing.Size(794, 425);
+            this.tabPageCities.Size = new System.Drawing.Size(939, 425);
             this.tabPageCities.TabIndex = 0;
             this.tabPageCities.Text = "Cities";
             this.tabPageCities.UseVisualStyleBackColor = true;
@@ -213,30 +213,8 @@
             this.dGVCities.DataSource = this.cITyBindingSource;
             this.dGVCities.Location = new System.Drawing.Point(-4, 35);
             this.dGVCities.Name = "dGVCities";
-            this.dGVCities.Size = new System.Drawing.Size(802, 390);
+            this.dGVCities.Size = new System.Drawing.Size(943, 390);
             this.dGVCities.TabIndex = 0;
-            // 
-            // cITYIDDataGridViewTextBoxColumn
-            // 
-            this.cITYIDDataGridViewTextBoxColumn.DataPropertyName = "CITY_ID";
-            this.cITYIDDataGridViewTextBoxColumn.HeaderText = "CITY_ID";
-            this.cITYIDDataGridViewTextBoxColumn.Name = "cITYIDDataGridViewTextBoxColumn";
-            // 
-            // cITYNAMEDataGridViewTextBoxColumn
-            // 
-            this.cITYNAMEDataGridViewTextBoxColumn.DataPropertyName = "CITY_NAME";
-            this.cITYNAMEDataGridViewTextBoxColumn.HeaderText = "CITY_NAME";
-            this.cITYNAMEDataGridViewTextBoxColumn.Name = "cITYNAMEDataGridViewTextBoxColumn";
-            // 
-            // dEPARTURESDataGridViewTextBoxColumn
-            // 
-            this.dEPARTURESDataGridViewTextBoxColumn.DataPropertyName = "DEPARTURES";
-            this.dEPARTURESDataGridViewTextBoxColumn.HeaderText = "DEPARTURES";
-            this.dEPARTURESDataGridViewTextBoxColumn.Name = "dEPARTURESDataGridViewTextBoxColumn";
-            // 
-            // cITyBindingSource
-            // 
-            this.cITyBindingSource.DataSource = typeof(TrnspMngmntDataEF.CITy);
             // 
             // tabPageDepartures
             // 
@@ -246,7 +224,7 @@
             this.tabPageDepartures.Location = new System.Drawing.Point(4, 22);
             this.tabPageDepartures.Name = "tabPageDepartures";
             this.tabPageDepartures.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDepartures.Size = new System.Drawing.Size(794, 425);
+            this.tabPageDepartures.Size = new System.Drawing.Size(939, 425);
             this.tabPageDepartures.TabIndex = 1;
             this.tabPageDepartures.Text = "Departures";
             this.tabPageDepartures.UseVisualStyleBackColor = true;
@@ -287,54 +265,8 @@
             this.dGVDepartures.DataSource = this.dEPARTUREBindingSource;
             this.dGVDepartures.Location = new System.Drawing.Point(-4, 35);
             this.dGVDepartures.Name = "dGVDepartures";
-            this.dGVDepartures.Size = new System.Drawing.Size(802, 390);
+            this.dGVDepartures.Size = new System.Drawing.Size(943, 390);
             this.dGVDepartures.TabIndex = 1;
-            // 
-            // dPIDDataGridViewTextBoxColumn
-            // 
-            this.dPIDDataGridViewTextBoxColumn.DataPropertyName = "DP_ID";
-            this.dPIDDataGridViewTextBoxColumn.HeaderText = "DP_ID";
-            this.dPIDDataGridViewTextBoxColumn.Name = "dPIDDataGridViewTextBoxColumn";
-            // 
-            // dPCITYDataGridViewTextBoxColumn
-            // 
-            this.dPCITYDataGridViewTextBoxColumn.DataPropertyName = "DP_CITY";
-            this.dPCITYDataGridViewTextBoxColumn.HeaderText = "DP_CITY";
-            this.dPCITYDataGridViewTextBoxColumn.Name = "dPCITYDataGridViewTextBoxColumn";
-            // 
-            // dPADRESSDataGridViewTextBoxColumn
-            // 
-            this.dPADRESSDataGridViewTextBoxColumn.DataPropertyName = "DP_ADRESS";
-            this.dPADRESSDataGridViewTextBoxColumn.HeaderText = "DP_ADRESS";
-            this.dPADRESSDataGridViewTextBoxColumn.Name = "dPADRESSDataGridViewTextBoxColumn";
-            // 
-            // dPNAMEDataGridViewTextBoxColumn
-            // 
-            this.dPNAMEDataGridViewTextBoxColumn.DataPropertyName = "DP_NAME";
-            this.dPNAMEDataGridViewTextBoxColumn.HeaderText = "DP_NAME";
-            this.dPNAMEDataGridViewTextBoxColumn.Name = "dPNAMEDataGridViewTextBoxColumn";
-            // 
-            // cARGOSDataGridViewTextBoxColumn
-            // 
-            this.cARGOSDataGridViewTextBoxColumn.DataPropertyName = "CARGOS";
-            this.cARGOSDataGridViewTextBoxColumn.HeaderText = "CARGOS";
-            this.cARGOSDataGridViewTextBoxColumn.Name = "cARGOSDataGridViewTextBoxColumn";
-            // 
-            // cARGOS1DataGridViewTextBoxColumn
-            // 
-            this.cARGOS1DataGridViewTextBoxColumn.DataPropertyName = "CARGOS1";
-            this.cARGOS1DataGridViewTextBoxColumn.HeaderText = "CARGOS1";
-            this.cARGOS1DataGridViewTextBoxColumn.Name = "cARGOS1DataGridViewTextBoxColumn";
-            // 
-            // cITyDataGridViewTextBoxColumn
-            // 
-            this.cITyDataGridViewTextBoxColumn.DataPropertyName = "CITy";
-            this.cITyDataGridViewTextBoxColumn.HeaderText = "CITy";
-            this.cITyDataGridViewTextBoxColumn.Name = "cITyDataGridViewTextBoxColumn";
-            // 
-            // dEPARTUREBindingSource
-            // 
-            this.dEPARTUREBindingSource.DataSource = typeof(TrnspMngmntDataEF.DEPARTURE);
             // 
             // tabPageCargos
             // 
@@ -344,7 +276,7 @@
             this.tabPageCargos.Location = new System.Drawing.Point(4, 22);
             this.tabPageCargos.Name = "tabPageCargos";
             this.tabPageCargos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCargos.Size = new System.Drawing.Size(794, 425);
+            this.tabPageCargos.Size = new System.Drawing.Size(939, 425);
             this.tabPageCargos.TabIndex = 2;
             this.tabPageCargos.Text = "Cargos";
             this.tabPageCargos.UseVisualStyleBackColor = true;
@@ -377,104 +309,22 @@
             this.dGVCargos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cGIDDataGridViewTextBoxColumn,
             this.cGNUMBERDataGridViewTextBoxColumn,
-            this.cGWEIGHTDataGridViewTextBoxColumn,
             this.cGDEPARTUREDATEDataGridViewTextBoxColumn,
-            this.cGARRIVALDATEDataGridViewTextBoxColumn,
-            this.cGDESTINATIONDataGridViewTextBoxColumn,
+            this.cGDEPARTURETIMEDataGridViewTextBoxColumn,
             this.cGDEPARTUREPLACEDataGridViewTextBoxColumn,
             this.cGTRUCKERDataGridViewTextBoxColumn,
-            this.cGDEPARTURETIMEDataGridViewTextBoxColumn,
+            this.cGWEIGHTDataGridViewTextBoxColumn,
+            this.cGARRIVALDATEDataGridViewTextBoxColumn,
             this.cGARRIVALTIMEDataGridViewTextBoxColumn,
+            this.cGDESTINATIONDataGridViewTextBoxColumn,
             this.dEPARTUREDataGridViewTextBoxColumn,
             this.dEPARTURE1DataGridViewTextBoxColumn,
             this.tRUCKERDataGridViewTextBoxColumn});
             this.dGVCargos.DataSource = this.cARGOBindingSource;
             this.dGVCargos.Location = new System.Drawing.Point(-4, 35);
             this.dGVCargos.Name = "dGVCargos";
-            this.dGVCargos.Size = new System.Drawing.Size(802, 390);
+            this.dGVCargos.Size = new System.Drawing.Size(945, 390);
             this.dGVCargos.TabIndex = 1;
-            // 
-            // cGIDDataGridViewTextBoxColumn
-            // 
-            this.cGIDDataGridViewTextBoxColumn.DataPropertyName = "CG_ID";
-            this.cGIDDataGridViewTextBoxColumn.HeaderText = "CG_ID";
-            this.cGIDDataGridViewTextBoxColumn.Name = "cGIDDataGridViewTextBoxColumn";
-            // 
-            // cGNUMBERDataGridViewTextBoxColumn
-            // 
-            this.cGNUMBERDataGridViewTextBoxColumn.DataPropertyName = "CG_NUMBER";
-            this.cGNUMBERDataGridViewTextBoxColumn.HeaderText = "CG_NUMBER";
-            this.cGNUMBERDataGridViewTextBoxColumn.Name = "cGNUMBERDataGridViewTextBoxColumn";
-            // 
-            // cGWEIGHTDataGridViewTextBoxColumn
-            // 
-            this.cGWEIGHTDataGridViewTextBoxColumn.DataPropertyName = "CG_WEIGHT";
-            this.cGWEIGHTDataGridViewTextBoxColumn.HeaderText = "CG_WEIGHT";
-            this.cGWEIGHTDataGridViewTextBoxColumn.Name = "cGWEIGHTDataGridViewTextBoxColumn";
-            // 
-            // cGDEPARTUREDATEDataGridViewTextBoxColumn
-            // 
-            this.cGDEPARTUREDATEDataGridViewTextBoxColumn.DataPropertyName = "CG_DEPARTURE_DATE";
-            this.cGDEPARTUREDATEDataGridViewTextBoxColumn.HeaderText = "CG_DEPARTURE_DATE";
-            this.cGDEPARTUREDATEDataGridViewTextBoxColumn.Name = "cGDEPARTUREDATEDataGridViewTextBoxColumn";
-            // 
-            // cGARRIVALDATEDataGridViewTextBoxColumn
-            // 
-            this.cGARRIVALDATEDataGridViewTextBoxColumn.DataPropertyName = "CG_ARRIVAL_DATE";
-            this.cGARRIVALDATEDataGridViewTextBoxColumn.HeaderText = "CG_ARRIVAL_DATE";
-            this.cGARRIVALDATEDataGridViewTextBoxColumn.Name = "cGARRIVALDATEDataGridViewTextBoxColumn";
-            // 
-            // cGDESTINATIONDataGridViewTextBoxColumn
-            // 
-            this.cGDESTINATIONDataGridViewTextBoxColumn.DataPropertyName = "CG_DESTINATION";
-            this.cGDESTINATIONDataGridViewTextBoxColumn.HeaderText = "CG_DESTINATION";
-            this.cGDESTINATIONDataGridViewTextBoxColumn.Name = "cGDESTINATIONDataGridViewTextBoxColumn";
-            // 
-            // cGDEPARTUREPLACEDataGridViewTextBoxColumn
-            // 
-            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn.DataPropertyName = "CG_DEPARTURE_PLACE";
-            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn.HeaderText = "CG_DEPARTURE_PLACE";
-            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn.Name = "cGDEPARTUREPLACEDataGridViewTextBoxColumn";
-            // 
-            // cGTRUCKERDataGridViewTextBoxColumn
-            // 
-            this.cGTRUCKERDataGridViewTextBoxColumn.DataPropertyName = "CG_TRUCKER";
-            this.cGTRUCKERDataGridViewTextBoxColumn.HeaderText = "CG_TRUCKER";
-            this.cGTRUCKERDataGridViewTextBoxColumn.Name = "cGTRUCKERDataGridViewTextBoxColumn";
-            // 
-            // cGDEPARTURETIMEDataGridViewTextBoxColumn
-            // 
-            this.cGDEPARTURETIMEDataGridViewTextBoxColumn.DataPropertyName = "CG_DEPARTURE_TIME";
-            this.cGDEPARTURETIMEDataGridViewTextBoxColumn.HeaderText = "CG_DEPARTURE_TIME";
-            this.cGDEPARTURETIMEDataGridViewTextBoxColumn.Name = "cGDEPARTURETIMEDataGridViewTextBoxColumn";
-            // 
-            // cGARRIVALTIMEDataGridViewTextBoxColumn
-            // 
-            this.cGARRIVALTIMEDataGridViewTextBoxColumn.DataPropertyName = "CG_ARRIVAL_TIME";
-            this.cGARRIVALTIMEDataGridViewTextBoxColumn.HeaderText = "CG_ARRIVAL_TIME";
-            this.cGARRIVALTIMEDataGridViewTextBoxColumn.Name = "cGARRIVALTIMEDataGridViewTextBoxColumn";
-            // 
-            // dEPARTUREDataGridViewTextBoxColumn
-            // 
-            this.dEPARTUREDataGridViewTextBoxColumn.DataPropertyName = "DEPARTURE";
-            this.dEPARTUREDataGridViewTextBoxColumn.HeaderText = "DEPARTURE";
-            this.dEPARTUREDataGridViewTextBoxColumn.Name = "dEPARTUREDataGridViewTextBoxColumn";
-            // 
-            // dEPARTURE1DataGridViewTextBoxColumn
-            // 
-            this.dEPARTURE1DataGridViewTextBoxColumn.DataPropertyName = "DEPARTURE1";
-            this.dEPARTURE1DataGridViewTextBoxColumn.HeaderText = "DEPARTURE1";
-            this.dEPARTURE1DataGridViewTextBoxColumn.Name = "dEPARTURE1DataGridViewTextBoxColumn";
-            // 
-            // tRUCKERDataGridViewTextBoxColumn
-            // 
-            this.tRUCKERDataGridViewTextBoxColumn.DataPropertyName = "TRUCKER";
-            this.tRUCKERDataGridViewTextBoxColumn.HeaderText = "TRUCKER";
-            this.tRUCKERDataGridViewTextBoxColumn.Name = "tRUCKERDataGridViewTextBoxColumn";
-            // 
-            // cARGOBindingSource
-            // 
-            this.cARGOBindingSource.DataSource = typeof(TrnspMngmntDataEF.CARGO);
             // 
             // tabPageTrucker
             // 
@@ -484,7 +334,7 @@
             this.tabPageTrucker.Location = new System.Drawing.Point(4, 22);
             this.tabPageTrucker.Name = "tabPageTrucker";
             this.tabPageTrucker.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrucker.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrucker.Size = new System.Drawing.Size(939, 425);
             this.tabPageTrucker.TabIndex = 3;
             this.tabPageTrucker.Text = "Truckers";
             this.tabPageTrucker.UseVisualStyleBackColor = true;
@@ -526,60 +376,8 @@
             this.dGVTruckers.DataSource = this.tRUCKERBindingSource;
             this.dGVTruckers.Location = new System.Drawing.Point(-4, 35);
             this.dGVTruckers.Name = "dGVTruckers";
-            this.dGVTruckers.Size = new System.Drawing.Size(802, 390);
+            this.dGVTruckers.Size = new System.Drawing.Size(943, 390);
             this.dGVTruckers.TabIndex = 1;
-            // 
-            // tRIDDataGridViewTextBoxColumn
-            // 
-            this.tRIDDataGridViewTextBoxColumn.DataPropertyName = "TR_ID";
-            this.tRIDDataGridViewTextBoxColumn.HeaderText = "TR_ID";
-            this.tRIDDataGridViewTextBoxColumn.Name = "tRIDDataGridViewTextBoxColumn";
-            // 
-            // tRNAMEDataGridViewTextBoxColumn
-            // 
-            this.tRNAMEDataGridViewTextBoxColumn.DataPropertyName = "TR_NAME";
-            this.tRNAMEDataGridViewTextBoxColumn.HeaderText = "TR_NAME";
-            this.tRNAMEDataGridViewTextBoxColumn.Name = "tRNAMEDataGridViewTextBoxColumn";
-            // 
-            // tRSURNAMEDataGridViewTextBoxColumn
-            // 
-            this.tRSURNAMEDataGridViewTextBoxColumn.DataPropertyName = "TR_SURNAME";
-            this.tRSURNAMEDataGridViewTextBoxColumn.HeaderText = "TR_SURNAME";
-            this.tRSURNAMEDataGridViewTextBoxColumn.Name = "tRSURNAMEDataGridViewTextBoxColumn";
-            // 
-            // tRBIRTHDataGridViewTextBoxColumn
-            // 
-            this.tRBIRTHDataGridViewTextBoxColumn.DataPropertyName = "TR_BIRTH";
-            this.tRBIRTHDataGridViewTextBoxColumn.HeaderText = "TR_BIRTH";
-            this.tRBIRTHDataGridViewTextBoxColumn.Name = "tRBIRTHDataGridViewTextBoxColumn";
-            // 
-            // tRSTARTDRIVEDataGridViewTextBoxColumn
-            // 
-            this.tRSTARTDRIVEDataGridViewTextBoxColumn.DataPropertyName = "TR_START_DRIVE";
-            this.tRSTARTDRIVEDataGridViewTextBoxColumn.HeaderText = "TR_START_DRIVE";
-            this.tRSTARTDRIVEDataGridViewTextBoxColumn.Name = "tRSTARTDRIVEDataGridViewTextBoxColumn";
-            // 
-            // tRTRUCKDataGridViewTextBoxColumn
-            // 
-            this.tRTRUCKDataGridViewTextBoxColumn.DataPropertyName = "TR_TRUCK";
-            this.tRTRUCKDataGridViewTextBoxColumn.HeaderText = "TR_TRUCK";
-            this.tRTRUCKDataGridViewTextBoxColumn.Name = "tRTRUCKDataGridViewTextBoxColumn";
-            // 
-            // cARGOSDataGridViewTextBoxColumn1
-            // 
-            this.cARGOSDataGridViewTextBoxColumn1.DataPropertyName = "CARGOS";
-            this.cARGOSDataGridViewTextBoxColumn1.HeaderText = "CARGOS";
-            this.cARGOSDataGridViewTextBoxColumn1.Name = "cARGOSDataGridViewTextBoxColumn1";
-            // 
-            // tRUCKDataGridViewTextBoxColumn
-            // 
-            this.tRUCKDataGridViewTextBoxColumn.DataPropertyName = "TRUCK";
-            this.tRUCKDataGridViewTextBoxColumn.HeaderText = "TRUCK";
-            this.tRUCKDataGridViewTextBoxColumn.Name = "tRUCKDataGridViewTextBoxColumn";
-            // 
-            // tRUCKERBindingSource
-            // 
-            this.tRUCKERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCKER);
             // 
             // tabPageTrucks
             // 
@@ -589,7 +387,7 @@
             this.tabPageTrucks.Location = new System.Drawing.Point(4, 22);
             this.tabPageTrucks.Name = "tabPageTrucks";
             this.tabPageTrucks.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrucks.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrucks.Size = new System.Drawing.Size(939, 425);
             this.tabPageTrucks.TabIndex = 4;
             this.tabPageTrucks.Text = "Trucks";
             this.tabPageTrucks.UseVisualStyleBackColor = true;
@@ -631,60 +429,8 @@
             this.dGVTrucks.DataSource = this.tRUCKBindingSource;
             this.dGVTrucks.Location = new System.Drawing.Point(-4, 35);
             this.dGVTrucks.Name = "dGVTrucks";
-            this.dGVTrucks.Size = new System.Drawing.Size(802, 390);
+            this.dGVTrucks.Size = new System.Drawing.Size(947, 390);
             this.dGVTrucks.TabIndex = 1;
-            // 
-            // tRUCKIDDataGridViewTextBoxColumn
-            // 
-            this.tRUCKIDDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_ID";
-            this.tRUCKIDDataGridViewTextBoxColumn.HeaderText = "TRUCK_ID";
-            this.tRUCKIDDataGridViewTextBoxColumn.Name = "tRUCKIDDataGridViewTextBoxColumn";
-            // 
-            // tRUCKNUMBERDataGridViewTextBoxColumn
-            // 
-            this.tRUCKNUMBERDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_NUMBER";
-            this.tRUCKNUMBERDataGridViewTextBoxColumn.HeaderText = "TRUCK_NUMBER";
-            this.tRUCKNUMBERDataGridViewTextBoxColumn.Name = "tRUCKNUMBERDataGridViewTextBoxColumn";
-            // 
-            // tRUCKTYPEDataGridViewTextBoxColumn
-            // 
-            this.tRUCKTYPEDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_TYPE";
-            this.tRUCKTYPEDataGridViewTextBoxColumn.HeaderText = "TRUCK_TYPE";
-            this.tRUCKTYPEDataGridViewTextBoxColumn.Name = "tRUCKTYPEDataGridViewTextBoxColumn";
-            // 
-            // tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn
-            // 
-            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_INSURANCE_EXPIRATION";
-            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn.HeaderText = "TRUCK_INSURANCE_EXPIRATION";
-            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn.Name = "tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn";
-            // 
-            // tRUCKTRAILERDataGridViewTextBoxColumn
-            // 
-            this.tRUCKTRAILERDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_TRAILER";
-            this.tRUCKTRAILERDataGridViewTextBoxColumn.HeaderText = "TRUCK_TRAILER";
-            this.tRUCKTRAILERDataGridViewTextBoxColumn.Name = "tRUCKTRAILERDataGridViewTextBoxColumn";
-            // 
-            // tRAILERDataGridViewTextBoxColumn
-            // 
-            this.tRAILERDataGridViewTextBoxColumn.DataPropertyName = "TRAILER";
-            this.tRAILERDataGridViewTextBoxColumn.HeaderText = "TRAILER";
-            this.tRAILERDataGridViewTextBoxColumn.Name = "tRAILERDataGridViewTextBoxColumn";
-            // 
-            // tRUCKTYPESDataGridViewTextBoxColumn
-            // 
-            this.tRUCKTYPESDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_TYPES";
-            this.tRUCKTYPESDataGridViewTextBoxColumn.HeaderText = "TRUCK_TYPES";
-            this.tRUCKTYPESDataGridViewTextBoxColumn.Name = "tRUCKTYPESDataGridViewTextBoxColumn";
-            // 
-            // tRUCKERSDataGridViewTextBoxColumn
-            // 
-            this.tRUCKERSDataGridViewTextBoxColumn.DataPropertyName = "TRUCKERS";
-            this.tRUCKERSDataGridViewTextBoxColumn.HeaderText = "TRUCKERS";
-            this.tRUCKERSDataGridViewTextBoxColumn.Name = "tRUCKERSDataGridViewTextBoxColumn";
-            // 
-            // tRUCKBindingSource
-            // 
-            this.tRUCKBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK);
             // 
             // tabPageTruckTypes
             // 
@@ -694,7 +440,7 @@
             this.tabPageTruckTypes.Location = new System.Drawing.Point(4, 22);
             this.tabPageTruckTypes.Name = "tabPageTruckTypes";
             this.tabPageTruckTypes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTruckTypes.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTruckTypes.Size = new System.Drawing.Size(939, 425);
             this.tabPageTruckTypes.TabIndex = 5;
             this.tabPageTruckTypes.Text = "Truck types";
             this.tabPageTruckTypes.UseVisualStyleBackColor = true;
@@ -733,42 +479,8 @@
             this.dGVTruckTypes.DataSource = this.tRUCKTYPESBindingSource;
             this.dGVTruckTypes.Location = new System.Drawing.Point(-4, 35);
             this.dGVTruckTypes.Name = "dGVTruckTypes";
-            this.dGVTruckTypes.Size = new System.Drawing.Size(802, 390);
+            this.dGVTruckTypes.Size = new System.Drawing.Size(943, 390);
             this.dGVTruckTypes.TabIndex = 1;
-            // 
-            // tYPEIDDataGridViewTextBoxColumn
-            // 
-            this.tYPEIDDataGridViewTextBoxColumn.DataPropertyName = "TYPE_ID";
-            this.tYPEIDDataGridViewTextBoxColumn.HeaderText = "TYPE_ID";
-            this.tYPEIDDataGridViewTextBoxColumn.Name = "tYPEIDDataGridViewTextBoxColumn";
-            // 
-            // tYPEMODELDataGridViewTextBoxColumn
-            // 
-            this.tYPEMODELDataGridViewTextBoxColumn.DataPropertyName = "TYPE_MODEL";
-            this.tYPEMODELDataGridViewTextBoxColumn.HeaderText = "TYPE_MODEL";
-            this.tYPEMODELDataGridViewTextBoxColumn.Name = "tYPEMODELDataGridViewTextBoxColumn";
-            // 
-            // tYPECAPACITYDataGridViewTextBoxColumn
-            // 
-            this.tYPECAPACITYDataGridViewTextBoxColumn.DataPropertyName = "TYPE_CAPACITY";
-            this.tYPECAPACITYDataGridViewTextBoxColumn.HeaderText = "TYPE_CAPACITY";
-            this.tYPECAPACITYDataGridViewTextBoxColumn.Name = "tYPECAPACITYDataGridViewTextBoxColumn";
-            // 
-            // tYPECLASSDataGridViewTextBoxColumn
-            // 
-            this.tYPECLASSDataGridViewTextBoxColumn.DataPropertyName = "TYPE_CLASS";
-            this.tYPECLASSDataGridViewTextBoxColumn.HeaderText = "TYPE_CLASS";
-            this.tYPECLASSDataGridViewTextBoxColumn.Name = "tYPECLASSDataGridViewTextBoxColumn";
-            // 
-            // tRUCKsDataGridViewTextBoxColumn
-            // 
-            this.tRUCKsDataGridViewTextBoxColumn.DataPropertyName = "TRUCKs";
-            this.tRUCKsDataGridViewTextBoxColumn.HeaderText = "TRUCKs";
-            this.tRUCKsDataGridViewTextBoxColumn.Name = "tRUCKsDataGridViewTextBoxColumn";
-            // 
-            // tRUCKTYPESBindingSource
-            // 
-            this.tRUCKTYPESBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK_TYPES);
             // 
             // tabPageTrailers
             // 
@@ -778,7 +490,7 @@
             this.tabPageTrailers.Location = new System.Drawing.Point(4, 22);
             this.tabPageTrailers.Name = "tabPageTrailers";
             this.tabPageTrailers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrailers.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrailers.Size = new System.Drawing.Size(939, 425);
             this.tabPageTrailers.TabIndex = 6;
             this.tabPageTrailers.Text = "Trailers";
             this.tabPageTrailers.UseVisualStyleBackColor = true;
@@ -818,48 +530,8 @@
             this.dGVTrailers.DataSource = this.tRAILERBindingSource;
             this.dGVTrailers.Location = new System.Drawing.Point(-4, 35);
             this.dGVTrailers.Name = "dGVTrailers";
-            this.dGVTrailers.Size = new System.Drawing.Size(802, 390);
+            this.dGVTrailers.Size = new System.Drawing.Size(943, 390);
             this.dGVTrailers.TabIndex = 1;
-            // 
-            // tRAILERIDDataGridViewTextBoxColumn
-            // 
-            this.tRAILERIDDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_ID";
-            this.tRAILERIDDataGridViewTextBoxColumn.HeaderText = "TRAILER_ID";
-            this.tRAILERIDDataGridViewTextBoxColumn.Name = "tRAILERIDDataGridViewTextBoxColumn";
-            // 
-            // tRAILERLASTOVERHAULDataGridViewTextBoxColumn
-            // 
-            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_LAST_OVERHAUL";
-            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn.HeaderText = "TRAILER_LAST_OVERHAUL";
-            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn.Name = "tRAILERLASTOVERHAULDataGridViewTextBoxColumn";
-            // 
-            // tRAILERSERIALNUMBERDataGridViewTextBoxColumn
-            // 
-            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_SERIAL_NUMBER";
-            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn.HeaderText = "TRAILER_SERIAL_NUMBER";
-            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn.Name = "tRAILERSERIALNUMBERDataGridViewTextBoxColumn";
-            // 
-            // tRAILERTYPEDataGridViewTextBoxColumn
-            // 
-            this.tRAILERTYPEDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_TYPE";
-            this.tRAILERTYPEDataGridViewTextBoxColumn.HeaderText = "TRAILER_TYPE";
-            this.tRAILERTYPEDataGridViewTextBoxColumn.Name = "tRAILERTYPEDataGridViewTextBoxColumn";
-            // 
-            // tRAILERTYPESDataGridViewTextBoxColumn
-            // 
-            this.tRAILERTYPESDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_TYPES";
-            this.tRAILERTYPESDataGridViewTextBoxColumn.HeaderText = "TRAILER_TYPES";
-            this.tRAILERTYPESDataGridViewTextBoxColumn.Name = "tRAILERTYPESDataGridViewTextBoxColumn";
-            // 
-            // tRUCKsDataGridViewTextBoxColumn1
-            // 
-            this.tRUCKsDataGridViewTextBoxColumn1.DataPropertyName = "TRUCKs";
-            this.tRUCKsDataGridViewTextBoxColumn1.HeaderText = "TRUCKs";
-            this.tRUCKsDataGridViewTextBoxColumn1.Name = "tRUCKsDataGridViewTextBoxColumn1";
-            // 
-            // tRAILERBindingSource
-            // 
-            this.tRAILERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRAILER);
             // 
             // tabPageTrailerTypes
             // 
@@ -869,7 +541,7 @@
             this.tabPageTrailerTypes.Location = new System.Drawing.Point(4, 22);
             this.tabPageTrailerTypes.Name = "tabPageTrailerTypes";
             this.tabPageTrailerTypes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrailerTypes.Size = new System.Drawing.Size(794, 425);
+            this.tabPageTrailerTypes.Size = new System.Drawing.Size(939, 425);
             this.tabPageTrailerTypes.TabIndex = 7;
             this.tabPageTrailerTypes.Text = "Trailer types";
             this.tabPageTrailerTypes.UseVisualStyleBackColor = true;
@@ -908,31 +580,316 @@
             this.dGVTrailerTypes.DataSource = this.tRAILERTYPESBindingSource;
             this.dGVTrailerTypes.Location = new System.Drawing.Point(-4, 35);
             this.dGVTrailerTypes.Name = "dGVTrailerTypes";
-            this.dGVTrailerTypes.Size = new System.Drawing.Size(802, 390);
+            this.dGVTrailerTypes.Size = new System.Drawing.Size(943, 390);
             this.dGVTrailerTypes.TabIndex = 1;
+            // 
+            // cITyBindingSource
+            // 
+            this.cITyBindingSource.DataSource = typeof(TrnspMngmntDataEF.CITy);
+            // 
+            // dEPARTUREBindingSource
+            // 
+            this.dEPARTUREBindingSource.DataSource = typeof(TrnspMngmntDataEF.DEPARTURE);
+            // 
+            // cGIDDataGridViewTextBoxColumn
+            // 
+            this.cGIDDataGridViewTextBoxColumn.DataPropertyName = "CG_ID";
+            this.cGIDDataGridViewTextBoxColumn.HeaderText = "CG_ID";
+            this.cGIDDataGridViewTextBoxColumn.Name = "cGIDDataGridViewTextBoxColumn";
+            this.cGIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cGNUMBERDataGridViewTextBoxColumn
+            // 
+            this.cGNUMBERDataGridViewTextBoxColumn.DataPropertyName = "CG_NUMBER";
+            this.cGNUMBERDataGridViewTextBoxColumn.HeaderText = "Number";
+            this.cGNUMBERDataGridViewTextBoxColumn.Name = "cGNUMBERDataGridViewTextBoxColumn";
+            // 
+            // cGDEPARTUREDATEDataGridViewTextBoxColumn
+            // 
+            this.cGDEPARTUREDATEDataGridViewTextBoxColumn.DataPropertyName = "CG_DEPARTURE_DATE";
+            this.cGDEPARTUREDATEDataGridViewTextBoxColumn.HeaderText = "Departure date";
+            this.cGDEPARTUREDATEDataGridViewTextBoxColumn.Name = "cGDEPARTUREDATEDataGridViewTextBoxColumn";
+            // 
+            // cGDEPARTURETIMEDataGridViewTextBoxColumn
+            // 
+            this.cGDEPARTURETIMEDataGridViewTextBoxColumn.DataPropertyName = "CG_DEPARTURE_TIME";
+            this.cGDEPARTURETIMEDataGridViewTextBoxColumn.HeaderText = "Departure Time";
+            this.cGDEPARTURETIMEDataGridViewTextBoxColumn.Name = "cGDEPARTURETIMEDataGridViewTextBoxColumn";
+            // 
+            // cGDEPARTUREPLACEDataGridViewTextBoxColumn
+            // 
+            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn.DataPropertyName = "CG_DEPARTURE_PLACE";
+            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn.HeaderText = "Departure Place";
+            this.cGDEPARTUREPLACEDataGridViewTextBoxColumn.Name = "cGDEPARTUREPLACEDataGridViewTextBoxColumn";
+            // 
+            // cGTRUCKERDataGridViewTextBoxColumn
+            // 
+            this.cGTRUCKERDataGridViewTextBoxColumn.DataPropertyName = "CG_TRUCKER";
+            this.cGTRUCKERDataGridViewTextBoxColumn.HeaderText = "Trucker";
+            this.cGTRUCKERDataGridViewTextBoxColumn.Name = "cGTRUCKERDataGridViewTextBoxColumn";
+            // 
+            // cGWEIGHTDataGridViewTextBoxColumn
+            // 
+            this.cGWEIGHTDataGridViewTextBoxColumn.DataPropertyName = "CG_WEIGHT";
+            this.cGWEIGHTDataGridViewTextBoxColumn.HeaderText = "Weight";
+            this.cGWEIGHTDataGridViewTextBoxColumn.Name = "cGWEIGHTDataGridViewTextBoxColumn";
+            // 
+            // cGARRIVALDATEDataGridViewTextBoxColumn
+            // 
+            this.cGARRIVALDATEDataGridViewTextBoxColumn.DataPropertyName = "CG_ARRIVAL_DATE";
+            this.cGARRIVALDATEDataGridViewTextBoxColumn.HeaderText = "Arrival date";
+            this.cGARRIVALDATEDataGridViewTextBoxColumn.Name = "cGARRIVALDATEDataGridViewTextBoxColumn";
+            // 
+            // cGARRIVALTIMEDataGridViewTextBoxColumn
+            // 
+            this.cGARRIVALTIMEDataGridViewTextBoxColumn.DataPropertyName = "CG_ARRIVAL_TIME";
+            this.cGARRIVALTIMEDataGridViewTextBoxColumn.HeaderText = "Arrival Time";
+            this.cGARRIVALTIMEDataGridViewTextBoxColumn.Name = "cGARRIVALTIMEDataGridViewTextBoxColumn";
+            // 
+            // cGDESTINATIONDataGridViewTextBoxColumn
+            // 
+            this.cGDESTINATIONDataGridViewTextBoxColumn.DataPropertyName = "CG_DESTINATION";
+            this.cGDESTINATIONDataGridViewTextBoxColumn.HeaderText = "Destination";
+            this.cGDESTINATIONDataGridViewTextBoxColumn.Name = "cGDESTINATIONDataGridViewTextBoxColumn";
+            // 
+            // dEPARTUREDataGridViewTextBoxColumn
+            // 
+            this.dEPARTUREDataGridViewTextBoxColumn.DataPropertyName = "DEPARTURE";
+            this.dEPARTUREDataGridViewTextBoxColumn.HeaderText = "DEPARTURE";
+            this.dEPARTUREDataGridViewTextBoxColumn.Name = "dEPARTUREDataGridViewTextBoxColumn";
+            this.dEPARTUREDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // dEPARTURE1DataGridViewTextBoxColumn
+            // 
+            this.dEPARTURE1DataGridViewTextBoxColumn.DataPropertyName = "DEPARTURE1";
+            this.dEPARTURE1DataGridViewTextBoxColumn.HeaderText = "DEPARTURE1";
+            this.dEPARTURE1DataGridViewTextBoxColumn.Name = "dEPARTURE1DataGridViewTextBoxColumn";
+            this.dEPARTURE1DataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKERDataGridViewTextBoxColumn
+            // 
+            this.tRUCKERDataGridViewTextBoxColumn.DataPropertyName = "TRUCKER";
+            this.tRUCKERDataGridViewTextBoxColumn.HeaderText = "TRUCKER";
+            this.tRUCKERDataGridViewTextBoxColumn.Name = "tRUCKERDataGridViewTextBoxColumn";
+            this.tRUCKERDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cARGOBindingSource
+            // 
+            this.cARGOBindingSource.DataSource = typeof(TrnspMngmntDataEF.CARGO);
+            // 
+            // tRIDDataGridViewTextBoxColumn
+            // 
+            this.tRIDDataGridViewTextBoxColumn.DataPropertyName = "TR_ID";
+            this.tRIDDataGridViewTextBoxColumn.HeaderText = "TR_ID";
+            this.tRIDDataGridViewTextBoxColumn.Name = "tRIDDataGridViewTextBoxColumn";
+            this.tRIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRNAMEDataGridViewTextBoxColumn
+            // 
+            this.tRNAMEDataGridViewTextBoxColumn.DataPropertyName = "TR_NAME";
+            this.tRNAMEDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.tRNAMEDataGridViewTextBoxColumn.Name = "tRNAMEDataGridViewTextBoxColumn";
+            // 
+            // tRSURNAMEDataGridViewTextBoxColumn
+            // 
+            this.tRSURNAMEDataGridViewTextBoxColumn.DataPropertyName = "TR_SURNAME";
+            this.tRSURNAMEDataGridViewTextBoxColumn.HeaderText = "Surname";
+            this.tRSURNAMEDataGridViewTextBoxColumn.Name = "tRSURNAMEDataGridViewTextBoxColumn";
+            // 
+            // tRBIRTHDataGridViewTextBoxColumn
+            // 
+            this.tRBIRTHDataGridViewTextBoxColumn.DataPropertyName = "TR_BIRTH";
+            this.tRBIRTHDataGridViewTextBoxColumn.HeaderText = "Birth";
+            this.tRBIRTHDataGridViewTextBoxColumn.Name = "tRBIRTHDataGridViewTextBoxColumn";
+            // 
+            // tRSTARTDRIVEDataGridViewTextBoxColumn
+            // 
+            this.tRSTARTDRIVEDataGridViewTextBoxColumn.DataPropertyName = "TR_START_DRIVE";
+            this.tRSTARTDRIVEDataGridViewTextBoxColumn.HeaderText = "Started driving";
+            this.tRSTARTDRIVEDataGridViewTextBoxColumn.Name = "tRSTARTDRIVEDataGridViewTextBoxColumn";
+            // 
+            // tRTRUCKDataGridViewTextBoxColumn
+            // 
+            this.tRTRUCKDataGridViewTextBoxColumn.DataPropertyName = "TR_TRUCK";
+            this.tRTRUCKDataGridViewTextBoxColumn.HeaderText = "Truck";
+            this.tRTRUCKDataGridViewTextBoxColumn.Name = "tRTRUCKDataGridViewTextBoxColumn";
+            // 
+            // cARGOSDataGridViewTextBoxColumn1
+            // 
+            this.cARGOSDataGridViewTextBoxColumn1.DataPropertyName = "CARGOS";
+            this.cARGOSDataGridViewTextBoxColumn1.HeaderText = "CARGOS";
+            this.cARGOSDataGridViewTextBoxColumn1.Name = "cARGOSDataGridViewTextBoxColumn1";
+            this.cARGOSDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // tRUCKDataGridViewTextBoxColumn
+            // 
+            this.tRUCKDataGridViewTextBoxColumn.DataPropertyName = "TRUCK";
+            this.tRUCKDataGridViewTextBoxColumn.HeaderText = "TRUCK";
+            this.tRUCKDataGridViewTextBoxColumn.Name = "tRUCKDataGridViewTextBoxColumn";
+            this.tRUCKDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKERBindingSource
+            // 
+            this.tRUCKERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCKER);
+            // 
+            // tRUCKIDDataGridViewTextBoxColumn
+            // 
+            this.tRUCKIDDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_ID";
+            this.tRUCKIDDataGridViewTextBoxColumn.HeaderText = "TRUCK_ID";
+            this.tRUCKIDDataGridViewTextBoxColumn.Name = "tRUCKIDDataGridViewTextBoxColumn";
+            this.tRUCKIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKNUMBERDataGridViewTextBoxColumn
+            // 
+            this.tRUCKNUMBERDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_NUMBER";
+            this.tRUCKNUMBERDataGridViewTextBoxColumn.HeaderText = "Truck number";
+            this.tRUCKNUMBERDataGridViewTextBoxColumn.Name = "tRUCKNUMBERDataGridViewTextBoxColumn";
+            // 
+            // tRUCKTYPEDataGridViewTextBoxColumn
+            // 
+            this.tRUCKTYPEDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_TYPE";
+            this.tRUCKTYPEDataGridViewTextBoxColumn.HeaderText = "Truck type";
+            this.tRUCKTYPEDataGridViewTextBoxColumn.Name = "tRUCKTYPEDataGridViewTextBoxColumn";
+            // 
+            // tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn
+            // 
+            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_INSURANCE_EXPIRATION";
+            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn.HeaderText = "Insurance expiration";
+            this.tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn.Name = "tRUCKINSURANCEEXPIRATIONDataGridViewTextBoxColumn";
+            // 
+            // tRUCKTRAILERDataGridViewTextBoxColumn
+            // 
+            this.tRUCKTRAILERDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_TRAILER";
+            this.tRUCKTRAILERDataGridViewTextBoxColumn.HeaderText = "Trailer";
+            this.tRUCKTRAILERDataGridViewTextBoxColumn.Name = "tRUCKTRAILERDataGridViewTextBoxColumn";
+            // 
+            // tRAILERDataGridViewTextBoxColumn
+            // 
+            this.tRAILERDataGridViewTextBoxColumn.DataPropertyName = "TRAILER";
+            this.tRAILERDataGridViewTextBoxColumn.HeaderText = "TRAILER";
+            this.tRAILERDataGridViewTextBoxColumn.Name = "tRAILERDataGridViewTextBoxColumn";
+            this.tRAILERDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKTYPESDataGridViewTextBoxColumn
+            // 
+            this.tRUCKTYPESDataGridViewTextBoxColumn.DataPropertyName = "TRUCK_TYPES";
+            this.tRUCKTYPESDataGridViewTextBoxColumn.HeaderText = "TRUCK_TYPES";
+            this.tRUCKTYPESDataGridViewTextBoxColumn.Name = "tRUCKTYPESDataGridViewTextBoxColumn";
+            this.tRUCKTYPESDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKERSDataGridViewTextBoxColumn
+            // 
+            this.tRUCKERSDataGridViewTextBoxColumn.DataPropertyName = "TRUCKERS";
+            this.tRUCKERSDataGridViewTextBoxColumn.HeaderText = "TRUCKERS";
+            this.tRUCKERSDataGridViewTextBoxColumn.Name = "tRUCKERSDataGridViewTextBoxColumn";
+            this.tRUCKERSDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKBindingSource
+            // 
+            this.tRUCKBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK);
+            // 
+            // tYPEIDDataGridViewTextBoxColumn
+            // 
+            this.tYPEIDDataGridViewTextBoxColumn.DataPropertyName = "TYPE_ID";
+            this.tYPEIDDataGridViewTextBoxColumn.HeaderText = "TYPE_ID";
+            this.tYPEIDDataGridViewTextBoxColumn.Name = "tYPEIDDataGridViewTextBoxColumn";
+            this.tYPEIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tYPEMODELDataGridViewTextBoxColumn
+            // 
+            this.tYPEMODELDataGridViewTextBoxColumn.DataPropertyName = "TYPE_MODEL";
+            this.tYPEMODELDataGridViewTextBoxColumn.HeaderText = "Model";
+            this.tYPEMODELDataGridViewTextBoxColumn.Name = "tYPEMODELDataGridViewTextBoxColumn";
+            // 
+            // tYPECAPACITYDataGridViewTextBoxColumn
+            // 
+            this.tYPECAPACITYDataGridViewTextBoxColumn.DataPropertyName = "TYPE_CAPACITY";
+            this.tYPECAPACITYDataGridViewTextBoxColumn.HeaderText = "Capacity";
+            this.tYPECAPACITYDataGridViewTextBoxColumn.Name = "tYPECAPACITYDataGridViewTextBoxColumn";
+            // 
+            // tYPECLASSDataGridViewTextBoxColumn
+            // 
+            this.tYPECLASSDataGridViewTextBoxColumn.DataPropertyName = "TYPE_CLASS";
+            this.tYPECLASSDataGridViewTextBoxColumn.HeaderText = "Class";
+            this.tYPECLASSDataGridViewTextBoxColumn.Name = "tYPECLASSDataGridViewTextBoxColumn";
+            // 
+            // tRUCKsDataGridViewTextBoxColumn
+            // 
+            this.tRUCKsDataGridViewTextBoxColumn.DataPropertyName = "TRUCKs";
+            this.tRUCKsDataGridViewTextBoxColumn.HeaderText = "TRUCKs";
+            this.tRUCKsDataGridViewTextBoxColumn.Name = "tRUCKsDataGridViewTextBoxColumn";
+            this.tRUCKsDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKTYPESBindingSource
+            // 
+            this.tRUCKTYPESBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRUCK_TYPES);
+            // 
+            // tRAILERIDDataGridViewTextBoxColumn
+            // 
+            this.tRAILERIDDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_ID";
+            this.tRAILERIDDataGridViewTextBoxColumn.HeaderText = "TRAILER_ID";
+            this.tRAILERIDDataGridViewTextBoxColumn.Name = "tRAILERIDDataGridViewTextBoxColumn";
+            this.tRAILERIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRAILERLASTOVERHAULDataGridViewTextBoxColumn
+            // 
+            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_LAST_OVERHAUL";
+            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn.HeaderText = "Last overhaul";
+            this.tRAILERLASTOVERHAULDataGridViewTextBoxColumn.Name = "tRAILERLASTOVERHAULDataGridViewTextBoxColumn";
+            // 
+            // tRAILERSERIALNUMBERDataGridViewTextBoxColumn
+            // 
+            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_SERIAL_NUMBER";
+            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn.HeaderText = "Serial number";
+            this.tRAILERSERIALNUMBERDataGridViewTextBoxColumn.Name = "tRAILERSERIALNUMBERDataGridViewTextBoxColumn";
+            // 
+            // tRAILERTYPEDataGridViewTextBoxColumn
+            // 
+            this.tRAILERTYPEDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_TYPE";
+            this.tRAILERTYPEDataGridViewTextBoxColumn.HeaderText = "Trailer type";
+            this.tRAILERTYPEDataGridViewTextBoxColumn.Name = "tRAILERTYPEDataGridViewTextBoxColumn";
+            // 
+            // tRAILERTYPESDataGridViewTextBoxColumn
+            // 
+            this.tRAILERTYPESDataGridViewTextBoxColumn.DataPropertyName = "TRAILER_TYPES";
+            this.tRAILERTYPESDataGridViewTextBoxColumn.HeaderText = "TRAILER_TYPES";
+            this.tRAILERTYPESDataGridViewTextBoxColumn.Name = "tRAILERTYPESDataGridViewTextBoxColumn";
+            this.tRAILERTYPESDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // tRUCKsDataGridViewTextBoxColumn1
+            // 
+            this.tRUCKsDataGridViewTextBoxColumn1.DataPropertyName = "TRUCKs";
+            this.tRUCKsDataGridViewTextBoxColumn1.HeaderText = "TRUCKs";
+            this.tRUCKsDataGridViewTextBoxColumn1.Name = "tRUCKsDataGridViewTextBoxColumn1";
+            this.tRUCKsDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // tRAILERBindingSource
+            // 
+            this.tRAILERBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRAILER);
             // 
             // tYPETRIDDataGridViewTextBoxColumn
             // 
             this.tYPETRIDDataGridViewTextBoxColumn.DataPropertyName = "TYPE_TR_ID";
             this.tYPETRIDDataGridViewTextBoxColumn.HeaderText = "TYPE_TR_ID";
             this.tYPETRIDDataGridViewTextBoxColumn.Name = "tYPETRIDDataGridViewTextBoxColumn";
+            this.tYPETRIDDataGridViewTextBoxColumn.Visible = false;
             // 
             // tYPETRMODELDataGridViewTextBoxColumn
             // 
             this.tYPETRMODELDataGridViewTextBoxColumn.DataPropertyName = "TYPE_TR_MODEL";
-            this.tYPETRMODELDataGridViewTextBoxColumn.HeaderText = "TYPE_TR_MODEL";
+            this.tYPETRMODELDataGridViewTextBoxColumn.HeaderText = "Model";
             this.tYPETRMODELDataGridViewTextBoxColumn.Name = "tYPETRMODELDataGridViewTextBoxColumn";
             // 
             // tYPETRCAPACITYDataGridViewTextBoxColumn
             // 
             this.tYPETRCAPACITYDataGridViewTextBoxColumn.DataPropertyName = "TYPE_TR_CAPACITY";
-            this.tYPETRCAPACITYDataGridViewTextBoxColumn.HeaderText = "TYPE_TR_CAPACITY";
+            this.tYPETRCAPACITYDataGridViewTextBoxColumn.HeaderText = "Capacity";
             this.tYPETRCAPACITYDataGridViewTextBoxColumn.Name = "tYPETRCAPACITYDataGridViewTextBoxColumn";
             // 
             // tYPETRTYPEDataGridViewTextBoxColumn
             // 
             this.tYPETRTYPEDataGridViewTextBoxColumn.DataPropertyName = "TYPE_TR_TYPE";
-            this.tYPETRTYPEDataGridViewTextBoxColumn.HeaderText = "TYPE_TR_TYPE";
+            this.tYPETRTYPEDataGridViewTextBoxColumn.HeaderText = "Type";
             this.tYPETRTYPEDataGridViewTextBoxColumn.Name = "tYPETRTYPEDataGridViewTextBoxColumn";
             // 
             // tRAILERsDataGridViewTextBoxColumn
@@ -940,43 +897,110 @@
             this.tRAILERsDataGridViewTextBoxColumn.DataPropertyName = "TRAILERs";
             this.tRAILERsDataGridViewTextBoxColumn.HeaderText = "TRAILERs";
             this.tRAILERsDataGridViewTextBoxColumn.Name = "tRAILERsDataGridViewTextBoxColumn";
+            this.tRAILERsDataGridViewTextBoxColumn.Visible = false;
             // 
             // tRAILERTYPESBindingSource
             // 
             this.tRAILERTYPESBindingSource.DataSource = typeof(TrnspMngmntDataEF.TRAILER_TYPES);
             // 
+            // cITYIDDataGridViewTextBoxColumn
+            // 
+            this.cITYIDDataGridViewTextBoxColumn.DataPropertyName = "CITY_ID";
+            this.cITYIDDataGridViewTextBoxColumn.HeaderText = "CITY_ID";
+            this.cITYIDDataGridViewTextBoxColumn.Name = "cITYIDDataGridViewTextBoxColumn";
+            this.cITYIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cITYNAMEDataGridViewTextBoxColumn
+            // 
+            this.cITYNAMEDataGridViewTextBoxColumn.DataPropertyName = "CITY_NAME";
+            this.cITYNAMEDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.cITYNAMEDataGridViewTextBoxColumn.Name = "cITYNAMEDataGridViewTextBoxColumn";
+            // 
+            // dEPARTURESDataGridViewTextBoxColumn
+            // 
+            this.dEPARTURESDataGridViewTextBoxColumn.DataPropertyName = "DEPARTURES";
+            this.dEPARTURESDataGridViewTextBoxColumn.HeaderText = "DEPARTURES";
+            this.dEPARTURESDataGridViewTextBoxColumn.Name = "dEPARTURESDataGridViewTextBoxColumn";
+            this.dEPARTURESDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // dPIDDataGridViewTextBoxColumn
+            // 
+            this.dPIDDataGridViewTextBoxColumn.DataPropertyName = "DP_ID";
+            this.dPIDDataGridViewTextBoxColumn.HeaderText = "DP_I";
+            this.dPIDDataGridViewTextBoxColumn.Name = "dPIDDataGridViewTextBoxColumn";
+            this.dPIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // dPCITYDataGridViewTextBoxColumn
+            // 
+            this.dPCITYDataGridViewTextBoxColumn.DataPropertyName = "DP_CITY";
+            this.dPCITYDataGridViewTextBoxColumn.HeaderText = "City";
+            this.dPCITYDataGridViewTextBoxColumn.Name = "dPCITYDataGridViewTextBoxColumn";
+            // 
+            // dPADRESSDataGridViewTextBoxColumn
+            // 
+            this.dPADRESSDataGridViewTextBoxColumn.DataPropertyName = "DP_ADRESS";
+            this.dPADRESSDataGridViewTextBoxColumn.HeaderText = "Adress";
+            this.dPADRESSDataGridViewTextBoxColumn.Name = "dPADRESSDataGridViewTextBoxColumn";
+            // 
+            // dPNAMEDataGridViewTextBoxColumn
+            // 
+            this.dPNAMEDataGridViewTextBoxColumn.DataPropertyName = "DP_NAME";
+            this.dPNAMEDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.dPNAMEDataGridViewTextBoxColumn.Name = "dPNAMEDataGridViewTextBoxColumn";
+            // 
+            // cARGOSDataGridViewTextBoxColumn
+            // 
+            this.cARGOSDataGridViewTextBoxColumn.DataPropertyName = "CARGOS";
+            this.cARGOSDataGridViewTextBoxColumn.HeaderText = "CARGOS";
+            this.cARGOSDataGridViewTextBoxColumn.Name = "cARGOSDataGridViewTextBoxColumn";
+            this.cARGOSDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cARGOS1DataGridViewTextBoxColumn
+            // 
+            this.cARGOS1DataGridViewTextBoxColumn.DataPropertyName = "CARGOS1";
+            this.cARGOS1DataGridViewTextBoxColumn.HeaderText = "CARGOS1";
+            this.cARGOS1DataGridViewTextBoxColumn.Name = "cARGOS1DataGridViewTextBoxColumn";
+            this.cARGOS1DataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cITyDataGridViewTextBoxColumn
+            // 
+            this.cITyDataGridViewTextBoxColumn.DataPropertyName = "CITy";
+            this.cITyDataGridViewTextBoxColumn.HeaderText = "CITy";
+            this.cITyDataGridViewTextBoxColumn.Name = "cITyDataGridViewTextBoxColumn";
+            this.cITyDataGridViewTextBoxColumn.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(944, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPageCities.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVCities)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cITyBindingSource)).EndInit();
             this.tabPageDepartures.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVDepartures)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dEPARTUREBindingSource)).EndInit();
             this.tabPageCargos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVCargos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cARGOBindingSource)).EndInit();
             this.tabPageTrucker.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVTruckers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRUCKERBindingSource)).EndInit();
             this.tabPageTrucks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVTrucks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRUCKBindingSource)).EndInit();
             this.tabPageTruckTypes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVTruckTypes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRUCKTYPESBindingSource)).EndInit();
             this.tabPageTrailers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVTrailers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRAILERBindingSource)).EndInit();
             this.tabPageTrailerTypes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVTrailerTypes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cITyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dEPARTUREBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cARGOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRUCKERBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRUCKBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRUCKTYPESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRAILERBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRAILERTYPESBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -1017,41 +1041,27 @@
         private System.Windows.Forms.Button buttonSaveTrailers;
         private System.Windows.Forms.Button buttonDeleteTrailerType;
         private System.Windows.Forms.Button buttonSaveTrailerType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cITYIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cITYNAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dEPARTURESDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource cITyBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dPIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dPCITYDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dPADRESSDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dPNAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARGOSDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARGOS1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cITyDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource dEPARTUREBindingSource;
+        private System.Windows.Forms.BindingSource cARGOBindingSource;
+        private System.Windows.Forms.BindingSource tRUCKERBindingSource;
+        private System.Windows.Forms.BindingSource tRUCKBindingSource;
+        private System.Windows.Forms.BindingSource tRUCKTYPESBindingSource;
+        private System.Windows.Forms.BindingSource tRAILERBindingSource;
+        private System.Windows.Forms.BindingSource tRAILERTYPESBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn cGIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cGNUMBERDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGWEIGHTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cGDEPARTUREDATEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGARRIVALDATEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGDESTINATIONDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGDEPARTURETIMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cGDEPARTUREPLACEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cGTRUCKERDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGDEPARTURETIMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGWEIGHTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGARRIVALDATEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cGARRIVALTIMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGDESTINATIONDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dEPARTUREDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dEPARTURE1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKERDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource cARGOBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tRIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tRNAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tRSURNAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tRBIRTHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tRSTARTDRIVEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tRTRUCKDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARGOSDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource tRUCKERBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKNUMBERDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKTYPEDataGridViewTextBoxColumn;
@@ -1060,26 +1070,40 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tRAILERDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKTYPESDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKERSDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource tRUCKBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPEIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPEMODELDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPECAPACITYDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPECLASSDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource tRUCKTYPESBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRAILERIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRAILERLASTOVERHAULDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRAILERSERIALNUMBERDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRAILERTYPEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRAILERTYPESDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKsDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.BindingSource tRAILERBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPETRIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPETRMODELDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPETRCAPACITYDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tYPETRTYPEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tRAILERsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource tRAILERTYPESBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tRIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tRNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tRSURNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tRBIRTHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tRSTARTDRIVEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tRTRUCKDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cARGOSDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tRUCKDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cITYIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cITYNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dEPARTURESDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dPIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dPCITYDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dPADRESSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dPNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cARGOSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cARGOS1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cITyDataGridViewTextBoxColumn;
     }
 }
 
