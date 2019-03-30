@@ -69,7 +69,7 @@ namespace WinFrmTrnspMngmnt
                 var b = (from c in ctx.DEPARTURES where c.DP_CITY == city.CITY_ID select c).Any();
                 if (b)
                 {
-                    MessageBox.Show("Deleting error! There is a reference in departures ", "Deleting info about cities");
+                    MessageBox.Show("Deleting error! There is a reference in departures ", "Deleting info about cities", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -97,11 +97,11 @@ namespace WinFrmTrnspMngmnt
         {
             try
             {
-                TrnspMngmntDataEF.DEPARTURE depart = (TrnspMngmntDataEF.DEPARTURE)dGVCargos.CurrentRow.DataBoundItem;
-                var b = (from c in ctx.CARGOS where (c.CG_DESTINATION == depart.DP_ID || c.CG_DEPARTURE_PLACE==depart.DP_ID) select c).Any();
+                TrnspMngmntDataEF.DEPARTURE depart = (TrnspMngmntDataEF.DEPARTURE)dGVDepartures.CurrentRow.DataBoundItem;
+                var b = (from c in ctx.CARGOS where (c.CG_DESTINATION == depart.DP_ID) ||( c.CG_DEPARTURE_PLACE==depart.DP_ID) select c).Any();
                 if (b)
                 {
-                    MessageBox.Show("Deleting error! There is a reference in cargos ", "Deleting info about departures");
+                    MessageBox.Show("Deleting error! There is a reference in cargos ", "Deleting info about departures", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -138,7 +138,7 @@ namespace WinFrmTrnspMngmnt
                 var b = (from c in ctx.CARGOS where (c.CG_TRUCKER == trucker.TR_ID) select c).Any();
                 if (b)
                 {
-                    MessageBox.Show("Deleting error! There is a reference in cargos ", "Deleting info about trucker");
+                    MessageBox.Show("Deleting error! There is a reference in cargos ", "Deleting info about trucker", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -165,7 +165,7 @@ namespace WinFrmTrnspMngmnt
                 var b = (from c in ctx.TRUCKERS where (c.TR_TRUCK == truck.TRUCK_ID) select c).Any();
                 if (b)
                 {
-                    MessageBox.Show("Deleting error! There is a reference in truckers ", "Deleting info about truck");
+                    MessageBox.Show("Deleting error! There is a reference in truckers ", "Deleting info about truck", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -192,7 +192,7 @@ namespace WinFrmTrnspMngmnt
                 var b = (from c in ctx.TRUCKs where (c.TRUCK_TYPE == truck_type.TYPE_ID) select c).Any();
                 if (b)
                 {
-                    MessageBox.Show("Deleting error! There is a reference in trucks ", "Deleting info about truck type");
+                    MessageBox.Show("Deleting error! There is a reference in trucks ", "Deleting info about truck type", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -219,7 +219,7 @@ namespace WinFrmTrnspMngmnt
                 var b = (from c in ctx.TRUCKs where (c.TRUCK_TRAILER == trailer.TRAILER_ID) select c).Any();
                 if (b)
                 {
-                    MessageBox.Show("Deleting error! There is a reference in truck ", "Deleting info about trailers");
+                    MessageBox.Show("Deleting error! There is a reference in truck ", "Deleting info about trailers", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -246,7 +246,7 @@ namespace WinFrmTrnspMngmnt
                 var b = (from c in ctx.TRAILERs where (c.TRAILER_TYPE == trailer_type.TYPE_TR_ID) select c).Any();
                 if (b)
                 {
-                    MessageBox.Show("Deleting error! There is a reference in trailer ", "Deleting info about trailer types");
+                    MessageBox.Show("Deleting error! There is a reference in trailer ", "Deleting info about trailer types", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
