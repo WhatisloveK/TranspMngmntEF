@@ -11,11 +11,11 @@ using System.Data.Entity;
 using TrnspMngmntDataEF;
 namespace WinFrmTrnspMngmnt
 {
-    public partial class Form1 : Form
+    public partial class TrnspMngmnt : Form
     {
         private TrnspMngmntDataEF.DBTransportManagementEntities ctx;
 
-        public Form1()
+        public TrnspMngmnt()
         {
             InitializeComponent();
         }
@@ -259,6 +259,12 @@ namespace WinFrmTrnspMngmnt
                 throw;
             }
         }
-    
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            FrmCargoSearch frmCargoSearch = new FrmCargoSearch();
+            frmCargoSearch.ShowDialog();
+            frmCargoSearch.Dispose();
+        }
     }
 }

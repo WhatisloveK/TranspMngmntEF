@@ -54,10 +54,10 @@
     <Compile Include="CARGO.cs">
       <DependentUpon>ModelTrnspMngmnt.tt</DependentUpon>
     </Compile>
+    <Compile Include="CargoSearch.cs" />
     <Compile Include="CITy.cs">
       <DependentUpon>ModelTrnspMngmnt.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="DEPARTURE.cs">
       <DependentUpon>ModelTrnspMngmnt.tt</DependentUpon>
     </Compile>
