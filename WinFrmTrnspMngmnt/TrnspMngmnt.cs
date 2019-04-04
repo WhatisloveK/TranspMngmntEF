@@ -59,8 +59,6 @@ namespace WinFrmTrnspMngmnt
         }
 
 
-
-
         #region Save-Delete Buttons
 
         private void buttonDeleteCities_Click(object sender, EventArgs e)
@@ -270,7 +268,7 @@ namespace WinFrmTrnspMngmnt
             frmCargoSearch.Dispose();
         }
 
-        
+        #region Validation
         private void dGVCargos_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
             int temp;
@@ -296,6 +294,102 @@ namespace WinFrmTrnspMngmnt
             }
         }
 
-       
+        private void dGVTrucks_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            int temp;
+            if (e.ColumnIndex == 0)
+            {
+                if (!int.TryParse(e.FormattedValue.ToString(), out temp))
+                {
+                    MessageBox.Show("CAUTION you've entered incorrect value");
+                    dGVTrucks.CurrentCell.Value = tmp;
+                }
+            }
+        }
+
+        private void dGVTrucks_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                if (dGVTrucks.CurrentCell.Value != null)
+                {
+                    int.TryParse(dGVTrucks.CurrentCell.Value.ToString(), out tmp);
+                }
+            }
+        }
+
+        private void dGVTruckTypes_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            int temp;
+            if (e.ColumnIndex == 2)
+            {
+                if (!int.TryParse(e.FormattedValue.ToString(), out temp))
+                {
+                    MessageBox.Show("CAUTION you've entered incorrect value");
+                    dGVTruckTypes.CurrentCell.Value = tmp;
+                }
+            }
+        }
+
+        private void dGVTruckTypes_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+                if (dGVTruckTypes.CurrentCell.Value != null)
+                {
+                    int.TryParse(dGVTruckTypes.CurrentCell.Value.ToString(), out tmp);
+                }
+            }
+        }
+
+        private void dGVTrailers_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            int temp;
+            if (e.ColumnIndex == 2)
+            {
+                if (!int.TryParse(e.FormattedValue.ToString(), out temp))
+                {
+                    MessageBox.Show("CAUTION you've entered incorrect value");
+                    dGVTrailers.CurrentCell.Value = tmp;
+                }
+            }
+        }
+
+        private void dGVTrailers_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+                if (dGVTrailers.CurrentCell.Value != null)
+                {
+                    int.TryParse(dGVTrailers.CurrentCell.Value.ToString(), out tmp);
+                }
+            }
+        }
+
+        private void dGVTrailerTypes_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            int temp;
+            if (e.ColumnIndex == 2)
+            {
+                if (!int.TryParse(e.FormattedValue.ToString(), out temp))
+                {
+                    MessageBox.Show("CAUTION you've entered incorrect value");
+                    dGVTrailerTypes.CurrentCell.Value = tmp;
+                }
+            }
+        }
+
+        private void dGVTrailerTypes_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+                if (dGVTrailerTypes.CurrentCell.Value != null)
+                {
+                    int.TryParse(dGVTrailerTypes.CurrentCell.Value.ToString(), out tmp);
+                }
+            }
+        }
+        #endregion
+
     }
 }
