@@ -19,12 +19,29 @@ namespace WinFrmTrnspMngmnt
 
         private void fillBindingSourse()
         {
+
+
+            string depart_city = textBoxDprtCity.Text;
+            string dest_city = textBoxDestCity.Text;
+            string departureAdress = textBoxDprtAdress.Text;
+            string destinationAdress = textBoxDestAdress.Text;
+            int weight = (int)numericUpDownWeight.Value;
+            string depart_day = dateTimePickerDeprt.Value.ToString("yyyy-MM-dd");
+            string dest_day = dateTimePickerDest.Value.ToString("yyyy-MM-dd");
+
+            string depart_time = dateTimePickerDeprtTime.Value.TimeOfDay.ToString();
+            string dest_time = dateTimePickerDestTime.Value.TimeOfDay.ToString();
+            if (!checkBoxDeprtDay.Checked)
+                depart_day = "";
+            if (!checkBoxDestDay.Checked)
+                dest_day = "";
+            if (!checkBoxDeprtTime.Checked)
+                depart_time = "";
+            if (!checkBoxDestTime.Checked)
+                dest_time = "";
+
+
             var ctx = new TrnspMngmntDataEF.DBTransportManagementEntities();
-
-
-            
-
-
             var query = from cargo in ctx.CARGOS
 
                         join dest in ctx.DEPARTURES on cargo.CG_DESTINATION equals dest.DP_ID
@@ -45,10 +62,18 @@ namespace WinFrmTrnspMngmnt
                             DestinationTime = cargo.CG_ARRIVAL_TIME,
 
                         };
+            
 
+            query = query.Where(n => (n.DepartureAdress == departureAdress || departureAdress == "") && (n.DestinationCity == dest_city ||dest_city == "")
+             && (n.DepartureCity == depart_city||depart_city=="") &&(n.DestinationAdress==destinationAdress||destinationAdress=="")&&(n.Weight==weight||weight==0)
+             && (n.DepartureDate.ToString()==depart_day||depart_day=="")&&(n.DestinationDate.ToString()==dest_day||dest_day=="")
+             &&(n.DepartureTime.ToString()==depart_time||depart_time=="")&&(n.DestinationTime.ToString()==dest_time||dest_time==""));
+
+            cargoSearchBindingSource.Clear();
             foreach ( var item in query)
             {
-                
+                cargoSearchBindingSource.Add(new TrnspMngmntDataEF.CargoSearch(item.DepartureDate, item.DestinationDate, item.DepartureTime,
+                    item.DestinationTime, item.DestinationCity, item.DepartureCity, item.DestinationAdress, item.DepartureAdress, item.Weight));
             }
         }
         protected override void OnLoad(EventArgs e)
@@ -90,6 +115,8 @@ namespace WinFrmTrnspMngmnt
         {
             fillBindingSourse();
         }
+
+       
     }
 }
 

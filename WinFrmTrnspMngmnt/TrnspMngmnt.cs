@@ -14,6 +14,7 @@ namespace WinFrmTrnspMngmnt
     public partial class TrnspMngmnt : Form
     {
         private TrnspMngmntDataEF.DBTransportManagementEntities ctx;
+        private int tmp=0;
 
         public TrnspMngmnt()
         {
@@ -57,9 +58,10 @@ namespace WinFrmTrnspMngmnt
             ctx.Dispose();
         }
 
-       
 
-     
+
+
+        #region Save-Delete Buttons
 
         private void buttonDeleteCities_Click(object sender, EventArgs e)
         {
@@ -259,6 +261,7 @@ namespace WinFrmTrnspMngmnt
                 throw;
             }
         }
+#endregion
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
@@ -266,5 +269,33 @@ namespace WinFrmTrnspMngmnt
             frmCargoSearch.ShowDialog();
             frmCargoSearch.Dispose();
         }
+
+        
+        private void dGVCargos_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            int temp;
+            if(e.ColumnIndex==0||e.ColumnIndex==6)
+            {
+                if(!int.TryParse(e.FormattedValue.ToString(),out temp))
+                {
+                    MessageBox.Show("CAUTION you've entered incorrect value");
+                    dGVCargos.CurrentCell.Value = tmp;
+                }
+            }
+
+        }
+
+        private void dGVCargos_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if(e.ColumnIndex==0||e.ColumnIndex==6)
+            {
+                if(dGVCargos.CurrentCell.Value!=null)
+                {
+                    int.TryParse(dGVCargos.CurrentCell.Value.ToString(), out tmp);
+                }
+            }
+        }
+
+       
     }
 }
