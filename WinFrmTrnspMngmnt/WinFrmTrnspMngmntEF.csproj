@@ -54,24 +54,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCargoSearch.cs">
+    <Compile Include="CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCargoSearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCargoSearch.Designer.cs">
+    <Compile Include="Forms\FrmCargoSearch.Designer.cs">
       <DependentUpon>FrmCargoSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="TrnspMngmnt.cs">
+    <Compile Include="Forms\TrnspMngmnt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TrnspMngmnt.Designer.cs">
+    <Compile Include="Forms\TrnspMngmnt.Designer.cs">
       <DependentUpon>TrnspMngmnt.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCargoSearch.resx">
+    <Compile Include="Forms\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FrmCargoSearch.resx">
       <DependentUpon>FrmCargoSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrnspMngmnt.resx">
+    <EmbeddedResource Include="Forms\TrnspMngmnt.resx">
       <DependentUpon>TrnspMngmnt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -83,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CargoSearch.datasource" />
     <None Include="Properties\DataSources\TrnspMngmntDataEF.CARGO.datasource" />

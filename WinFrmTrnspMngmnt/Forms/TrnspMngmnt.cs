@@ -263,9 +263,17 @@ namespace WinFrmTrnspMngmnt
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            FrmCargoSearch frmCargoSearch = new FrmCargoSearch();
-            frmCargoSearch.ShowDialog();
-            frmCargoSearch.Dispose();
+            var che = ctx.ChangeTracker.Entries<CARGO>().Where(a => a.State != System.Data.Entity.EntityState.Unchanged).ToList();
+            if (che.Count != 0)
+            {
+                MessageBox.Show("Caution there are unsaved data "," Cargo Info");
+            }
+            else
+            {
+                FrmCargoSearch frmCargoSearch = new FrmCargoSearch();
+                frmCargoSearch.ShowDialog();
+                frmCargoSearch.Dispose();
+            }
         }
 
         #region Validation
