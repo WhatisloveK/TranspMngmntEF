@@ -14,7 +14,7 @@ namespace WinFrmTrnspMngmnt
     public partial class TrnspMngmnt : Form
     {
         private TrnspMngmntDataEF.DBTransportManagementEntities ctx;
-        private int tmp=0;
+        private int tmp = 0; 
 
         public TrnspMngmnt()
         {
