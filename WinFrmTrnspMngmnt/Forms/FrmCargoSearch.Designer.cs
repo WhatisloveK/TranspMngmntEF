@@ -87,7 +87,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(943, 312);
             this.dataGridView1.TabIndex = 0;
-           
             // 
             // departureDateDataGridViewTextBoxColumn
             // 
@@ -384,6 +383,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmCargoSearch";
             this.Text = "CargoSearch";
+         
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargoSearchBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();

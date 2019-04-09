@@ -31,6 +31,7 @@ namespace WinFrmTrnspMngmnt
 
             string depart_time = dateTimePickerDeprtTime.Value.TimeOfDay.ToString();
             string dest_time = dateTimePickerDestTime.Value.TimeOfDay.ToString();
+            
             if (!checkBoxDeprtDay.Checked)
                 depart_day = "";
             if (!checkBoxDestDay.Checked)
@@ -39,6 +40,7 @@ namespace WinFrmTrnspMngmnt
                 depart_time = "";
             if (!checkBoxDestTime.Checked)
                 dest_time = "";
+          
 
 
             var ctx = new TrnspMngmntDataEF.DBTransportManagementEntities();
@@ -47,8 +49,8 @@ namespace WinFrmTrnspMngmnt
                         join dest in ctx.DEPARTURES on cargo.CG_DESTINATION equals dest.DP_ID
                         join deprt in ctx.DEPARTURES on cargo.CG_DEPARTURE_PLACE equals deprt.DP_ID
                         join destCity in ctx.CITIES on dest.DP_CITY equals destCity.CITY_ID
-                        join deprtCity in ctx.CITIES on deprt.DP_CITY equals deprtCity.CITY_ID 
-                        
+                        join deprtCity in ctx.CITIES on deprt.DP_CITY equals deprtCity.CITY_ID
+
                         select new
                         {
                             DepartureDate = cargo.CG_DEPARTURE_DATE,
@@ -59,8 +61,8 @@ namespace WinFrmTrnspMngmnt
                             DestinationCity = destCity.CITY_NAME,
                             DestinationAdress = dest.DP_ADRESS,
                             DestinationDate = cargo.CG_ARRIVAL_DATE,
-                            DestinationTime = cargo.CG_ARRIVAL_TIME,
-
+                            DestinationTime = cargo.CG_ARRIVAL_TIME
+                            
                         };
             
 
@@ -89,7 +91,7 @@ namespace WinFrmTrnspMngmnt
             fillBindingSourse();
         }
 
-       
+      
     }
 }
 
